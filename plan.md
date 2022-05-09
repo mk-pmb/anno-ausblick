@@ -2,7 +2,7 @@
 Sehr bald
 =========
 
-* Antwort-Annotationen per Dublin Core ausweisen.
+* Antwort-Annotationen per Dublin-Core-Relation ausweisen.
 * Antwort-Annotationen in der Legacy-Suche so ausliefern,
   dass das aktuelle (2022-05-05) anno-frontend sie versteht.
 * [Anno Protocol][anno-proto] lesen und vergleichen,
@@ -20,22 +20,24 @@ Bald
 ====
 
 * Neue Annotationen einreichen können per "händischem" HTTP.
+* Multi-Target-Support beim Einreichen neuer Annotationen.
 * Neu eingereichte Annotationen sofort ungeprüft veröffentlichen.
 * anno-frontend soll die neue Annotationen-einreichen-API verwenden können.
 * Einrichung neuer Annotationen per ACL beschränken können.
-* Erzwinge Autoren-Kennung neu eingereichter Annotationen
-  entsprechend Identität aus Sitzungsverwaltung.
-  * Wenn Autor-Identität mitgesendet wurde und abweicht, verweigern.
-    Nicht einfach ersetzen – wäre problematisch bei Lizenzen wie CC-BY.
-* anno-frontend soll die erzwungene Autor-Identität bei Vorschau
-  und Einreichung berücksichtigen.
-* anno-frontend auf neue API und Dublin Core umrüsten.
+* Multi-Target-Support in anno-frontend
+* anno-frontend auf neue API und Dublin-Core-Relationen umrüsten.
 
 
 
 Sommer '22
 ==========
 
+* Erzwinge Autoren-Kennung neu eingereichter Annotationen
+  entsprechend Identität aus Sitzungsverwaltung.
+  * Wenn Autor-Identität mitgesendet wurde und abweicht, verweigern.
+    Nicht einfach ersetzen – wäre problematisch bei Lizenzen wie CC-BY.
+* anno-frontend soll die erzwungene Autor-Identität bei Vorschau
+  und Einreichung berücksichtigen.
 * Bearbeiten eigener Annotationen ermöglichen.
   * mittels anno-frontend.
   * mit ACL-Bindung, Standard: verboten.
