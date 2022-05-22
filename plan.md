@@ -2,6 +2,8 @@
 Sehr bald
 =========
 
+* Nur noch Standard-konforme Attribute oberster Ebene speichern.
+* DOIs per Dublin-Core-Relation ausweisen.
 * Antwort-Annotationen per Dublin-Core-Relation ausweisen.
 * Antwort-Annotationen in der Legacy-Suche so ausliefern,
   dass das aktuelle (2022-05-05) anno-frontend sie versteht.
