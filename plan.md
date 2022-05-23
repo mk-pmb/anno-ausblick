@@ -2,12 +2,14 @@
 Sehr bald
 =========
 
-* Nur noch Standard-konforme Attribute oberster Ebene speichern.
-* DOIs per Dublin-Core-Relation ausweisen.
-* Antwort-Annotationen per Dublin-Core-Relation ausweisen.
-* Antwort-Annotationen in der Legacy-Suche so ausliefern,
+* ✅ Nur noch Standard-konforme Attribute oberster Ebene speichern.
+* ✅ DOIs per Dublin-Core-Relation ausweisen.
+* 🚧 Antwort-Annotationen per Activity-Streams-Relation ausweisen.
+* 🚧 Antworten auf Antworten (… auf Antworten …) ausliefern
+* 🚧 Annotationen auch ohne Angabe einer genauen Revision ausliefern.
+* 🚧 Antwort-Annotationen in der Legacy-Suche so ausliefern,
   dass das aktuelle (2022-05-05) anno-frontend sie versteht.
-* [Anno Protocol][anno-proto] lesen und vergleichen,
+* 🚧 [Anno Protocol][anno-proto] lesen und vergleichen,
   wo noch Anpassungen nötig sind.
 * Sitzungsverwaltung per Shiboleth, mit Integration in anno-frontend
   * Wer bin ich und wie lange noch?
@@ -27,7 +29,7 @@ Bald
 * anno-frontend soll die neue Annotationen-einreichen-API verwenden können.
 * Einrichung neuer Annotationen per ACL beschränken können.
 * Multi-Target-Support in anno-frontend
-* anno-frontend auf neue API und Dublin-Core-Relationen umrüsten.
+* anno-frontend auf neue API und dc:/as: Relationen umrüsten.
 
 
 
