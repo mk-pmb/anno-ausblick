@@ -83,6 +83,12 @@ Herbst '22
   * mit ACL-Bindung, Standard: verboten.
 * Cron Job zur Vergabe genehmigter DOIs.
 * Cron Job für Dienst-spezifische Config und ACLs synchronisieren
+* Anno-Frontend: neben GND-Schlagworten auch freie Schlagworte.
+* Anno-Frontend: Verschlagwortung mit standardisierten Nicht-GND-Vorkabularen
+  * z.B. Geonames
+  * ggf. auch Zeitpunkte/-spannen
+  * ggf. auch Geo-Koordinaten
+
 
 
 
