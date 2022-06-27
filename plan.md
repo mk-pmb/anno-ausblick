@@ -12,7 +12,7 @@ Sehr bald
 * ✅ Umwandlungs-Programm MongoDB &rarr; Postgres minimalistisch dokumentieren.
 * 🚧 [Anno Protocol][anno-proto] lesen und vergleichen,
   wo noch Anpassungen nötig sind.
-* 🚧 Sitzungsverwaltung per Shiboleth, mit Integration in anno-frontend
+* 🚧 Sitzungsverwaltung per Shiboleth, mit API-Endpunkt für anno-frontend.
   * Wer bin ich und wie lange noch?
 * Globale ACL: Lesezugriff und Suchergebnis-Sichtbarkeit beschränken können.
 * Dienst-spezifische ACL
@@ -27,6 +27,7 @@ Bald
 * Neue Annotationen einreichen können per "händischem" HTTP.
 * Multi-Target-Support beim Einreichen neuer Annotationen.
 * Neu eingereichte Annotationen sofort ungeprüft veröffentlichen.
+* anno-frontend soll die Sitzungs-Identität und -Restzeit darstellen.
 * anno-frontend soll die neue Annotationen-einreichen-API verwenden können.
 * Einrichung neuer Annotationen per ACL beschränken können.
 * Multi-Target-Support in anno-frontend
