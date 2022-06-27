@@ -12,7 +12,7 @@ Sehr bald
 * ✅ Umwandlungs-Programm MongoDB &rarr; Postgres minimalistisch dokumentieren.
 * 🚧 [Anno Protocol][anno-proto] lesen und vergleichen,
   wo noch Anpassungen nötig sind.
-* 🚧 Sitzungsverwaltung per Shiboleth, mit API-Endpunkt für anno-frontend.
+* ✅ Sitzungsverwaltung per Shiboleth, mit API-Endpunkt für anno-frontend.
   * Wer bin ich und wie lange noch?
 * Globale ACL: Lesezugriff und Suchergebnis-Sichtbarkeit beschränken können.
 * Dienst-spezifische ACL
