@@ -13,12 +13,14 @@ Sehr bald
 * 🚧 [Anno Protocol][anno-proto] lesen und vergleichen,
   wo noch Anpassungen nötig sind.
 * ✅ Sitzungsverwaltung per Shiboleth, mit API-Endpunkt für anno-frontend.
-  * Wer bin ich und wie lange noch?
-* Globale ACL: Lesezugriff und Suchergebnis-Sichtbarkeit beschränken können.
-* Dienst-spezifische ACL
-* Werk-spezifische ACL
-* Alte Revisionen auflisten und ausliefern können.
-* Bei Abruf einer Einzelannotation mit bevorzugtem Antwort-Typ HTML,
+  * ✅ Wer bin ich und wie lange noch?
+* ✅ Globale ACL: Lesezugriff und Suchergebnis-Sichtbarkeit beschränken können.
+* ✅ Dienst-spezifische ACL
+* ✅ Werk-spezifische ACL
+* ⌛ Alte Revisionen auflisten und ausliefern können.
+  * ☕ Noch unklar: [Welche property verwenden?](
+    https://github.com/w3c/web-annotation/issues/446)
+* ✅ Bei Abruf einer Einzelannotation mit bevorzugtem Antwort-Typ HTML,
   leite auf erste Target Scope URL weiter.
 
 
@@ -26,12 +28,12 @@ Sehr bald
 Bald
 ====
 
-* Neue Annotationen einreichen können per "händischem" HTTP.
+* 🚧 Neue Annotationen einreichen können per "händischem" HTTP.
 * Multi-Target-Support beim Einreichen neuer Annotationen.
 * Neu eingereichte Annotationen sofort ungeprüft veröffentlichen.
 * anno-frontend soll die Sitzungs-Identität und -Restzeit darstellen.
 * anno-frontend soll die neue Annotationen-einreichen-API verwenden können.
-* Einrichung neuer Annotationen per ACL beschränken können.
+* ✅ Einreichung neuer Annotationen per ACL beschränken können.
 * Multi-Target-Support in anno-frontend
 * anno-frontend auf neue API und dc:/as: Relationen umrüsten.
 
