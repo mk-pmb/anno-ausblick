@@ -19,7 +19,7 @@ Sehr bald
 * Werk-spezifische ACL
 * Alte Revisionen auflisten und ausliefern können.
 * Bei Abruf einer Einzelannotation mit bevorzugtem Antwort-Typ HTML,
-  leite auf eine Target Scope-basierte URL weiter.
+  leite auf erste Target Scope URL weiter.
 
 
 
