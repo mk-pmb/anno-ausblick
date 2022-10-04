@@ -1,6 +1,8 @@
 ﻿
-Sehr bald
-=========
+2022
+====
+
+### Sommer
 
 * ✅ Nur noch Standard-konforme Attribute oberster Ebene speichern.
 * ✅ DOIs per Dublin-Core-Relation ausweisen.
@@ -10,50 +12,96 @@ Sehr bald
 * ⛔ <s>Antwort-Annotationen in der Legacy-Suche so ausliefern,
   dass das aktuelle (2022-05-05) anno-frontend sie versteht.</s>
 * ✅ Umwandlungs-Programm MongoDB &rarr; Postgres minimalistisch dokumentieren.
-* 🚧 [Anno Protocol][anno-proto] lesen und vergleichen,
-  wo noch Anpassungen nötig sind.
 * ✅ Sitzungsverwaltung per Shiboleth, mit API-Endpunkt für anno-frontend.
   * ✅ Wer bin ich und wie lange noch?
 * ✅ Globale ACL: Lesezugriff und Suchergebnis-Sichtbarkeit beschränken können.
 * ✅ Dienst-spezifische ACL
 * ✅ Werk-spezifische ACL
-* ⌛ Alte Revisionen auflisten und ausliefern können.
-  * ☕ Noch unklar: [Welche property verwenden?](
-    https://github.com/w3c/web-annotation/issues/446)
 * ✅ Bei Abruf einer Einzelannotation mit bevorzugtem Antwort-Typ HTML,
   leite auf erste Target Scope URL weiter.
 
 
+### nebenher
 
-Bald
-====
+* 🚧 [Anno Protocol][anno-proto] lesen und vergleichen,
+  wo noch Anpassungen nötig sind.
 
+
+### bis 10.10.
+
+* 🚧 Alte Revisionen auflisten und ausliefern können.
+  ([Diskussion: Welche property verwenden?](
+  https://github.com/w3c/web-annotation/issues/446 ))
 * 🚧 Neue Annotationen einreichen können per "händischem" HTTP.
-* Multi-Target-Support beim Einreichen neuer Annotationen.
-* Neu eingereichte Annotationen sofort ungeprüft veröffentlichen.
-* anno-frontend soll die Sitzungs-Identität und -Restzeit darstellen.
-* anno-frontend soll die neue Annotationen-einreichen-API verwenden können.
-* ✅ Einreichung neuer Annotationen per ACL beschränken können.
-* Multi-Target-Support in anno-frontend
-* anno-frontend auf neue API und dc:/as: Relationen umrüsten.
-
-
-
-Sommer '22
-==========
-
-* Erzwinge Autoren-Kennung neu eingereichter Annotationen
+  * ✅ Einreichung neuer Annotationen per ACL beschränken können.
+  * ✅ Datenformat der eingereichten Annotation grob prüfen.
+  * 🚧 Neu eingereichte Annotationen sofort ungeprüft veröffentlichen.
+* 🚧 Erzwinge Autoren-Kennung neu eingereichter Annotationen
   entsprechend Identität aus Sitzungsverwaltung.
-  * Wenn Autor-Identität mitgesendet wurde und abweicht, verweigern.
-    Nicht einfach ersetzen – wäre problematisch bei Lizenzen wie CC-BY.
-* anno-frontend soll die erzwungene Autor-Identität bei Vorschau
-  und Einreichung berücksichtigen.
+* 🚧 Optionale Fallback-Autoren-Kennung, wenn keine mit eingereicht wurde.
+  * Risiken dokumentieren
+
+
+### bis 17.10.
+
+* Standard-konforme Suche nach eingeschränktem Target URL Präfix.
+* anno-frontend soll Ober-Annotationen anhand der neuen Suche finden
+  und vorerst ohne Unter-Annotationen darstellen.
+
+
+### bis 24.10.
+
+(—)
+
+
+### bis 31.10.
+
+(—)
+
+
+### bis 07.11.
+
+* anno-frontend soll die Sitzungs-Identität und -Restzeit darstellen.
+* anno-frontend soll erlaubte Autor-Identitäten zur Auswahl anbieten.
+* anno-frontend soll die neue Annotationen-einreichen-API verwenden können.
+* anno-frontend soll die Autor-Identität bei der Vorschau berücksichtigen.
+
+
+### bis 14.11.
+
+* Multi-Target-Support beim Einreichen neuer Annotationen.
+* Multi-Target-Support in anno-frontend.
+
+
+### bis 21.11.
+
+* anno-frontend: Unter-Annos finden und vorerst nur chronologisch darstellen.
+* anno-frontend: Antwort auf Annotationen ermöglichen.
+
+
+### bis 28.11.
+
 * Bearbeiten eigener Annotationen ermöglichen.
-  * mittels anno-frontend.
-  * mit ACL-Bindung, Standard: verboten.
+  * Bodies bearbeiten mit anno-frontend.
+  * Autorenkennung wechseln mit anno-frontend.
+  * ACL-Berechtigung für Bodies ändern.
+  * ACL-Berechtigung für Targets ändern.
+  * ACL-Berechtigung für Autorenkennung wechseln innerhalb der
+    erlaubten eigenen.
+
+
+### bis 05.12.
+
 * Bearbeiten fremder Annotationen ermöglichen.
-  * mittels anno-frontend.
-  * mit ACL-Bindung, Standard: verboten.
+  * Bodies bearbeiten mit anno-frontend.
+  * Autorenkennung wechseln durch manuelle Eingabe der ID.
+  * ACL-Berechtigung für Bodies ändern.
+  * ACL-Berechtigung für Targets ändern.
+  * ACL-Berechtigung für Autorenkennung beliebig ändern.
+
+
+### bis 12.12.
+
 * Sichtbarkeit von Annotationen einschränken:
   * Postgres Views lernen
   * "Zurückgezogen am"-Datum verbirgt Annotationen
@@ -64,20 +112,35 @@ Sommer '22
     * Zeitstempel 0 = noch nicht zur VÖ vorgesehen.
     * Müssen dem Autor und Moderatoren trotzdem irgendwie angezeigt werden.
     * Eigene unveröffentlichte Entwürfe "löschen" mittels zurückziehen.
+
+
+### bis 19.12.
+
 * Eingeschränkte Sichtbarkeit:
   Neue Annos von Moderatoren freischalten lassen.
-
-
-
-Herbst '22
-==========
-
 * Schreibschutz für Annotationen: nur noch Moderatoren dürfen updaten.
   * Zusammen mit "Zurückgezogen am"-Datum wird daraus Möglichkeit zu
     erzwungener Depublikation.
   * Vorerst ohne Integration in anno-frontend:
     Kommt hoffentlich so selten vor, dass manuell bannen
     und in DB eintragen ausreicht.
+
+
+### bis 26.12.
+
+(—)
+
+
+2023
+====
+
+### bis 02.01.
+
+(—)
+
+
+### bis 09.01.
+
 * Erteilung einer DOI beantragen können.
   * mit ACL-Bindung, Standard: verboten.
 * DOI-Vergabe manuell genehmigen können.
@@ -86,13 +149,38 @@ Herbst '22
   falls Benutzer beides darf.
 * Manuelle direkte DOI-Vergabe.
   * mit ACL-Bindung, Standard: verboten.
-* Cron Job zur Vergabe genehmigter DOIs.
+
+
+### bis 16.01.
+
+* ACL: Ermittlung zusätzlicher Werk-spezifischer Metadaten aus riesigen,
+  stark redundanten YAML-Dumps (DWork "sammlung" + "oaisets")
 * Cron Job für Dienst-spezifische Config und ACLs synchronisieren
-* Anno-Frontend: neben GND-Schlagworten auch freie Schlagworte.
-* Anno-Frontend: Verschlagwortung mit standardisierten Nicht-GND-Vorkabularen
+
+
+### bis 23.01.
+
+* Cron Job zur Vergabe genehmigter DOIs.
+
+
+### später?
+
+* anno-frontend: neben GND-Schlagworten auch freie Schlagworte.
+* anno-frontend: Verschlagwortung mit standardisierten Nicht-GND-Vorkabularen
   * z.B. Geonames
   * ggf. auch Zeitpunkte/-spannen
   * ggf. auch Geo-Koordinaten
+* anno-frontend: Unter-Annotationen hierarchisch darstellen mit Baumstruktur
+  oben und Detail-Ansicht ausgewählter Einzelannotation darunter.
+
+
+
+zurückgestellt
+==============
+
+* Optionaler detaillierter Vergleich der Autor-Identität, falls eine
+  mitgesendet wurde. Wenn sie abweicht, verweigern statt ersetzen, denn das
+  könnte bei Lizenzen wie CC-BY je nach Publikum problematisch sein.
 
 
 
