@@ -76,6 +76,12 @@
 ### bis 21.11.
 
 * anno-frontend: Unter-Annos finden und vorerst nur chronologisch darstellen.
+  <!-- Strategie zur Anzeige des Antwortbezugs:
+    1.  Alle zugehörigen Annos entdecken und laden.
+    1.  Nach Datum sortieren.
+    1.  `refNums[anno.id] = '#' + listenNummer;`
+    1.  vor Title: `'Bezogen auf ' + (refNums[anno.inReplyTo] || 'unbekannt')`
+  -->
 * anno-frontend: Antwort auf Annotationen ermöglichen.
 
 
