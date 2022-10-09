@@ -178,6 +178,8 @@
   * ggf. auch Geo-Koordinaten
 * anno-frontend: Unter-Annotationen hierarchisch darstellen mit Baumstruktur
   oben und Detail-Ansicht ausgewählter Einzelannotation darunter.
+* Einreichung von Annotationen nur wenn Lizenz in Liste akzeptierter Lizenzen.
+* Aus Worddatei kopierte Endnotenverlinkungen (UBHD GitLab issue #4)
 
 
 
