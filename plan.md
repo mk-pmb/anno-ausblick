@@ -29,13 +29,13 @@
 
 ### bis 10.10.
 
-* 🚧 Alte Revisionen auflisten und ausliefern können.
+* ✅ Alte Revisionen auflisten und ausliefern können.
   ([Diskussion: Welche property verwenden?](
   https://github.com/w3c/web-annotation/issues/446 ))
-* 🚧 Neue Annotationen einreichen können per "händischem" HTTP.
+* ✅ Neue Annotationen einreichen können per "händischem" HTTP.
   * ✅ Einreichung neuer Annotationen per ACL beschränken können.
   * ✅ Datenformat der eingereichten Annotation grob prüfen.
-  * 🚧 Neu eingereichte Annotationen sofort ungeprüft veröffentlichen.
+  * ✅ Neu eingereichte Annotationen sofort ungeprüft veröffentlichen.
 * 🚧 Erzwinge Autoren-Kennung neu eingereichter Annotationen
   entsprechend Identität aus Sitzungsverwaltung.
 * 🚧 Optionale Fallback-Autoren-Kennung, wenn keine mit eingereicht wurde.
@@ -171,6 +171,7 @@
 
 ### später?
 
+* Ordentliche ACL-Beschränkung für Abruf der Versionshistorie.
 * anno-frontend: neben GND-Schlagworten auch freie Schlagworte.
 * anno-frontend: Verschlagwortung mit standardisierten Nicht-GND-Vorkabularen
   * z.B. Geonames
