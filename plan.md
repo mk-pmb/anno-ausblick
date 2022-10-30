@@ -36,10 +36,10 @@
   * ✅ Einreichung neuer Annotationen per ACL beschränken können.
   * ✅ Datenformat der eingereichten Annotation grob prüfen.
   * ✅ Neu eingereichte Annotationen sofort ungeprüft veröffentlichen.
-* 🚧 Erzwinge Autoren-Kennung neu eingereichter Annotationen
+* ✅ Erzwinge Autoren-Kennung neu eingereichter Annotationen
   entsprechend Identität aus Sitzungsverwaltung.
-* 🚧 Optionale Fallback-Autoren-Kennung, wenn keine mit eingereicht wurde.
-  * Risiken dokumentieren
+* ✅ Optionale Fallback-Autoren-Kennung, wenn keine mit eingereicht wurde.
+  * ✅ Risiken dokumentieren
 
 
 ### bis 17.10.
