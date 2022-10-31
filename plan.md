@@ -44,8 +44,8 @@
 
 ### bis 17.10.
 
-* Standard-konforme Suche nach eingeschränktem Target URL Präfix.
-* anno-frontend soll Ober-Annotationen anhand der neuen Suche finden
+* ✅ Standard-konforme Suche nach eingeschränktem Target URL Präfix.
+* ✅ anno-frontend soll Ober-Annotationen anhand der neuen Suche finden
   und vorerst ohne Unter-Annotationen darstellen.
 
 
