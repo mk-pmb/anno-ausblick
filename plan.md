@@ -1,4 +1,25 @@
 ﻿
+<!-- <
+
+U+2614 umbrella with rain drops (☔)
+U+2615 hot beverage (☕)
+U+26A0 warning sign (⚠)
+U+26D4 no entry (⛔)
+U+2705 white heavy check mark (✅)
+
+U+1F4A4 sleeping symbol (💤)
+U+1F4A5 collision symbol (💥)
+U+1F534 large red circle (🔴)
+U+1F534 large red circle (🔴)
+U+1F56E book (🕮)
+U+1F578 spider web (🕸)
+U+1F5D1 wastebasket (🗑)
+U+1F5D9 cancellation x (🗙)
+U+1F6A7 construction sign (🚧)
+
+> -->
+
+
 2022
 ====
 
@@ -61,10 +82,14 @@
 
 ### bis 07.11.
 
-* anno-frontend soll die Sitzungs-Identität und -Restzeit darstellen.
-* anno-frontend soll erlaubte Autor-Identitäten zur Auswahl anbieten.
-* anno-frontend soll die neue Annotationen-einreichen-API verwenden können.
-* anno-frontend soll die Autor-Identität bei der Vorschau berücksichtigen.
+* ✅ Alte JWT-basierte Pseudo-Sessions entsorgen.
+* ☔ anno-frontend soll die Sitzungs-Identität und -Restzeit darstellen.
+  * Unklar, wie wir das UI so bauen können, dass es gut mit Bootstrap
+    und der umgebenden App zusammenpasst.
+* ✅ anno-frontend soll erlaubte Autor-Identitäten zur Auswahl anbieten.
+  * 🚧 und sich die zuletzt benutzte merken
+* 🚧 anno-frontend soll die neue Annotationen-einreichen-API verwenden können.
+* 🚧 anno-frontend soll die Autor-Identität bei der Vorschau berücksichtigen.
 
 
 ### bis 14.11.
