@@ -83,23 +83,26 @@ U+1F6A7 construction sign (🚧)
 ### bis 07.11.
 
 * ✅ Alte JWT-basierte Pseudo-Sessions entsorgen.
-* ☔ anno-frontend soll die Sitzungs-Identität und -Restzeit darstellen.
-  * Unklar, wie wir das UI so bauen können, dass es gut mit Bootstrap
-    und der umgebenden App zusammenpasst.
+* ✅ anno-frontend soll die Sitzungs-Identität und -Restzeit darstellen.
 * ✅ anno-frontend soll erlaubte Autor-Identitäten zur Auswahl anbieten.
-  * 🚧 und sich die zuletzt benutzte merken
-* 🚧 anno-frontend soll die neue Annotationen-einreichen-API verwenden können.
-* 🚧 anno-frontend soll die Autor-Identität bei der Vorschau berücksichtigen.
+  * ⛔ <s>und sich die zuletzt benutzte merken</s>
+    * komplexer als erwartet, und scheint nicht wichtig &rArr; vertagt.
+* ✅ anno-frontend soll die neue Annotationen-einreichen-API verwenden können.
+* ✅ anno-frontend soll die Autor-Identität bei der Vorschau berücksichtigen.
 
 
 ### bis 14.11.
 
-* Multi-Target-Support beim Einreichen neuer Annotationen.
-* Multi-Target-Support in anno-frontend.
+* ✅ Multi-Target-Support beim Einreichen neuer Annotationen.
+* ✅ Multi-Target-Support in anno-frontend: UI-Konzept
+* ✅ Enwürfe im Frontend: UI-Konzept
 
 
 ### bis 21.11.
 
+* Enwürfe im Frontend: einbauen
+* Multi-Target-Support in anno-frontend: einbauen.
+* anno-frontend: Antwort auf Annotationen ermöglichen.
 * anno-frontend: Unter-Annos finden und vorerst nur chronologisch darstellen.
   <!-- Strategie zur Anzeige des Antwortbezugs:
     1.  Alle zugehörigen Annos entdecken und laden.
@@ -107,7 +110,6 @@ U+1F6A7 construction sign (🚧)
     1.  `refNums[anno.id] = '#' + listenNummer;`
     1.  vor Title: `'Bezogen auf ' + (refNums[anno.inReplyTo] || 'unbekannt')`
   -->
-* anno-frontend: Antwort auf Annotationen ermöglichen.
 
 
 ### bis 28.11.
@@ -142,7 +144,6 @@ U+1F6A7 construction sign (🚧)
   * "Veröffentlichung am"-Datum zwecks Entwurf-Stadium
     * Zeitstempel 0 = noch nicht zur VÖ vorgesehen.
     * Müssen dem Autor und Moderatoren trotzdem irgendwie angezeigt werden.
-    * Eigene unveröffentlichte Entwürfe "löschen" mittels zurückziehen.
 
 
 ### bis 19.12.
