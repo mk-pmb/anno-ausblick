@@ -1,6 +1,7 @@
 ﻿
 <!-- <
 
+U+23F3 hourglass with flowing sand (⏳)
 U+2614 umbrella with rain drops (☔)
 U+2615 hot beverage (☕)
 U+26A0 warning sign (⚠)
@@ -95,14 +96,53 @@ U+1F6A7 construction sign (🚧)
 
 * ✅ Multi-Target-Support beim Einreichen neuer Annotationen.
 * ✅ Multi-Target-Support in anno-frontend: UI-Konzept
-* ✅ Enwürfe im Frontend: UI-Konzept
+* ✅ Entwürfe im Frontend: UI-Konzept
 
 
 ### bis 21.11.
 
-* Enwürfe im Frontend: einbauen
-* Multi-Target-Support in anno-frontend: einbauen.
-* anno-frontend: Antwort auf Annotationen ermöglichen.
+* ⏳ Entwürfe im Frontend: einbauen
+* ⏳ Multi-Target-Support in anno-frontend: einbauen.
+
+
+### bis 28.11.
+
+* ✅ Entwürfe im Frontend: einbauen
+
+
+### bis 05.12.
+
+* ✅ Entwürfe-Gruppierung nach Ähnlichkeit des Untersuchungsobjekts
+* ✅ Entwürfe löschen können
+* ⏳ Eigene Entwurfsbezeichnung
+
+### bis 12.12.
+
+* ✅ Eigene Entwurfsbezeichnung
+* ✅ Entwürfe-UI verbessern
+
+
+### bis 19.12.
+
+* ✅ Multi-Target-Support in anno-frontend: einbauen.
+
+
+
+2023
+====
+
+### bis 09.01.
+
+* ✅ Entwürfe als Vorlage speichern
+* ✅ Bugfix: SVG-Zone aus Entwurf laden
+* ✅ Scope-Target-Gleichsetzung (Option `targetScopeImpliesSource`)
+  bei Entwürfen berücksichtigen
+* 🚧 anno-frontend: Antwort auf Annotationen ermöglichen.
+
+
+### bis 16.01.
+
+* 🚧 anno-frontend: Antwort auf Annotationen ermöglichen.
 * anno-frontend: Unter-Annos finden und vorerst nur chronologisch darstellen.
   <!-- Strategie zur Anzeige des Antwortbezugs:
     1.  Alle zugehörigen Annos entdecken und laden.
@@ -112,7 +152,17 @@ U+1F6A7 construction sign (🚧)
   -->
 
 
-### bis 28.11.
+### bis 23.01.
+
+(—)
+
+
+### bis 30.01.
+
+(—)
+
+
+### bis 06.02.
 
 * Bearbeiten eigener Annotationen ermöglichen.
   * Bodies bearbeiten mit anno-frontend.
@@ -123,7 +173,7 @@ U+1F6A7 construction sign (🚧)
     erlaubten eigenen.
 
 
-### bis 05.12.
+### bis 13.02.
 
 * Bearbeiten fremder Annotationen ermöglichen.
   * Bodies bearbeiten mit anno-frontend.
@@ -133,7 +183,7 @@ U+1F6A7 construction sign (🚧)
   * ACL-Berechtigung für Autorenkennung beliebig ändern.
 
 
-### bis 12.12.
+### bis 20.02.
 
 * Sichtbarkeit von Annotationen einschränken:
   * Postgres Views lernen
@@ -146,7 +196,7 @@ U+1F6A7 construction sign (🚧)
     * Müssen dem Autor und Moderatoren trotzdem irgendwie angezeigt werden.
 
 
-### bis 19.12.
+### bis 27.02.
 
 * Eingeschränkte Sichtbarkeit:
   Neue Annos von Moderatoren freischalten lassen.
@@ -158,20 +208,7 @@ U+1F6A7 construction sign (🚧)
     und in DB eintragen ausreicht.
 
 
-### bis 26.12.
-
-(—)
-
-
-2023
-====
-
-### bis 02.01.
-
-(—)
-
-
-### bis 09.01.
+### bis 06.03.
 
 * Erteilung einer DOI beantragen können.
   * mit ACL-Bindung, Standard: verboten.
@@ -183,20 +220,17 @@ U+1F6A7 construction sign (🚧)
   * mit ACL-Bindung, Standard: verboten.
 
 
-### bis 16.01.
+### bis 13.03.
 
 * ACL: Ermittlung zusätzlicher Werk-spezifischer Metadaten aus riesigen,
   stark redundanten YAML-Dumps (DWork "sammlung" + "oaisets")
 * Cron Job für Dienst-spezifische Config und ACLs synchronisieren
 
 
-### bis 23.01.
+
+### später
 
 * Cron Job zur Vergabe genehmigter DOIs.
-
-
-### später?
-
 * Ordentliche ACL-Beschränkung für Abruf der Versionshistorie.
 * anno-frontend: neben GND-Schlagworten auch freie Schlagworte.
 * anno-frontend: Verschlagwortung mit standardisierten Nicht-GND-Vorkabularen
