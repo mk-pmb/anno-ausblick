@@ -154,36 +154,27 @@ U+1F6A7 construction sign (🚧)
 
 ### bis 23.01.
 
-(—)
+* Bearbeiten eigener Annotationen ermöglichen.
+  * Bodies bearbeiten mit anno-frontend.
+  * Autorenkennung wechseln mit anno-frontend.
+  * ACL-Berechtigung: Revision zu eigener Annotation speichern…
+    * … mit abweichenden Bodies
+    * … mit abweichenden Targets
+    * … mit abweichender Autorenkennung innerhalb der erlaubten eigenen
 
 
 ### bis 30.01.
 
-(—)
-
-
-### bis 06.02.
-
-* Bearbeiten eigener Annotationen ermöglichen.
-  * Bodies bearbeiten mit anno-frontend.
-  * Autorenkennung wechseln mit anno-frontend.
-  * ACL-Berechtigung für Bodies ändern.
-  * ACL-Berechtigung für Targets ändern.
-  * ACL-Berechtigung für Autorenkennung wechseln innerhalb der
-    erlaubten eigenen.
-
-
-### bis 13.02.
-
 * Bearbeiten fremder Annotationen ermöglichen.
   * Bodies bearbeiten mit anno-frontend.
   * Autorenkennung wechseln durch manuelle Eingabe der ID.
-  * ACL-Berechtigung für Bodies ändern.
-  * ACL-Berechtigung für Targets ändern.
-  * ACL-Berechtigung für Autorenkennung beliebig ändern.
+  * ACL-Berechtigung: Revision zu fremder Annotation speichern…
+    * … mit abweichenden Bodies
+    * … mit abweichenden Targets
+    * … mit beliebig abweichender Autorenkennung
 
 
-### bis 20.02.
+### bis 06.02.
 
 * Sichtbarkeit von Annotationen einschränken:
   * Postgres Views lernen
@@ -196,7 +187,7 @@ U+1F6A7 construction sign (🚧)
     * Müssen dem Autor und Moderatoren trotzdem irgendwie angezeigt werden.
 
 
-### bis 27.02.
+### bis 13.02.
 
 * Eingeschränkte Sichtbarkeit:
   Neue Annos von Moderatoren freischalten lassen.
@@ -208,7 +199,7 @@ U+1F6A7 construction sign (🚧)
     und in DB eintragen ausreicht.
 
 
-### bis 06.03.
+### bis 20.02.
 
 * Erteilung einer DOI beantragen können.
   * mit ACL-Bindung, Standard: verboten.
@@ -220,16 +211,11 @@ U+1F6A7 construction sign (🚧)
   * mit ACL-Bindung, Standard: verboten.
 
 
-### bis 13.03.
+### später
 
 * ACL: Ermittlung zusätzlicher Werk-spezifischer Metadaten aus riesigen,
   stark redundanten YAML-Dumps (DWork "sammlung" + "oaisets")
 * Cron Job für Dienst-spezifische Config und ACLs synchronisieren
-
-
-
-### später
-
 * Cron Job zur Vergabe genehmigter DOIs.
 * Ordentliche ACL-Beschränkung für Abruf der Versionshistorie.
 * anno-frontend: neben GND-Schlagworten auch freie Schlagworte.
