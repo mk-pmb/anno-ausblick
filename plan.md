@@ -241,6 +241,8 @@ U+1F6A7 construction sign (🚧)
   oben und Detail-Ansicht ausgewählter Einzelannotation darunter.
 * Einreichung von Annotationen nur wenn Lizenz in Liste akzeptierter Lizenzen.
 * Aus Worddatei kopierte Endnotenverlinkungen (UBHD GitLab issue #4)
+* Benachrichtigung für Autoren über Antworten auf ihre Beiträge
+* Benachrichtigung für Moderatoren über Aktionsbedarf
 
 
 
