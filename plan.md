@@ -229,6 +229,7 @@ U+1F6A7 construction sign (🚧)
 * Aus Worddatei kopierte Endnotenverlinkungen (UBHD GitLab issue #4)
 * Benachrichtigung für Autoren über Antworten auf ihre Beiträge
 * Benachrichtigung für Moderatoren über Aktionsbedarf
+* Druckansicht für Einzelannotation
 
 
 
