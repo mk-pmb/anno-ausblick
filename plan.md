@@ -137,12 +137,14 @@ U+1F6A7 construction sign (🚧)
 * ✅ Bugfix: SVG-Zone aus Entwurf laden
 * ✅ Scope-Target-Gleichsetzung (Option `targetScopeImpliesSource`)
   bei Entwürfen berücksichtigen
-* 🚧 anno-frontend: Antwort auf Annotationen ermöglichen.
+* ⏳ anno-frontend: Antwort auf Annotationen ermöglichen.
 
 
 ### bis 16.01.
 
-* 🚧 anno-frontend: Antwort auf Annotationen ermöglichen.
+* ✅ anno-frontend: Antwort auf Annotationen ermöglichen.
+* ✅ Server: Antwort-Annotationen speichern
+* Server: Antwort-Annotationen ausliefern können
 * anno-frontend: Unter-Annos finden und vorerst nur chronologisch darstellen.
   <!-- Strategie zur Anzeige des Antwortbezugs:
     1.  Alle zugehörigen Annos entdecken und laden.
