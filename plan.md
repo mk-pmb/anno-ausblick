@@ -213,25 +213,27 @@ U+1F6A7 construction sign (🚧)
   * mit ACL-Bindung, Standard: verboten.
 
 
-### später
+### später (absteigende Priorität)
 
-* ACL: Ermittlung zusätzlicher Werk-spezifischer Metadaten aus riesigen,
-  stark redundanten YAML-Dumps (DWork "sammlung" + "oaisets")
+* anno-frontend: Unter-Annotationen hierarchisch darstellen mit Baumstruktur
+  oben und Detail-Ansicht ausgewählter Einzelannotation darunter.
 * Cron Job für Dienst-spezifische Config und ACLs synchronisieren
 * Cron Job zur Vergabe genehmigter DOIs.
-* Ordentliche ACL-Beschränkung für Abruf der Versionshistorie.
+* Benachrichtigung für Moderatoren über Aktionsbedarf
+* Benachrichtigung für Autoren über Antworten auf ihre Beiträge
 * anno-frontend: neben GND-Schlagworten auch freie Schlagworte.
 * anno-frontend: Verschlagwortung mit standardisierten Nicht-GND-Vorkabularen
   * z.B. Geonames
   * ggf. auch Zeitpunkte/-spannen
   * ggf. auch Geo-Koordinaten
-* anno-frontend: Unter-Annotationen hierarchisch darstellen mit Baumstruktur
-  oben und Detail-Ansicht ausgewählter Einzelannotation darunter.
+* Komfortable Nutzer-/ACL-Pflege per Webformular
+  (damit das nicht immer IT machen muss)
+* ACL: Ermittlung zusätzlicher Werk-spezifischer Metadaten aus riesigen,
+  stark redundanten YAML-Dumps (DWork "sammlung" + "oaisets")
+* Ordentliche ACL-Beschränkung für Abruf der Versionshistorie.
 * Einreichung von Annotationen nur wenn Lizenz in Liste akzeptierter Lizenzen.
-* Aus Worddatei kopierte Endnotenverlinkungen (UBHD GitLab issue #4)
-* Benachrichtigung für Autoren über Antworten auf ihre Beiträge
-* Benachrichtigung für Moderatoren über Aktionsbedarf
 * Druckansicht für Einzelannotation
+* Aus Worddatei kopierte Endnotenverlinkungen (UBHD GitLab issue #4)
 
 
 
