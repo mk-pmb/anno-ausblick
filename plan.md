@@ -144,7 +144,12 @@ U+1F6A7 construction sign (🚧)
 
 * ✅ anno-frontend: Antwort auf Annotationen ermöglichen.
 * ✅ Server: Antwort-Annotationen speichern
-* Server: Antwort-Annotationen ausliefern können
+* ✅ Server: Antwort-Annotationen ausliefern können
+
+
+### bis 23.01.
+
+* ✅ Umstellung Datenformat auf `dc:title`
 * anno-frontend: Unter-Annos finden und vorerst nur chronologisch darstellen.
   <!-- Strategie zur Anzeige des Antwortbezugs:
     1.  Alle zugehörigen Annos entdecken und laden.
@@ -152,10 +157,6 @@ U+1F6A7 construction sign (🚧)
     1.  `refNums[anno.id] = '#' + listenNummer;`
     1.  vor Title: `'Bezogen auf ' + (refNums[anno.inReplyTo] || 'unbekannt')`
   -->
-
-
-### bis 23.01.
-
 * Bearbeiten eigener Annotationen ermöglichen.
   * Bodies bearbeiten mit anno-frontend.
   * Autorenkennung wechseln mit anno-frontend.
