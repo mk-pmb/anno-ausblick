@@ -150,6 +150,7 @@ U+1F6A7 construction sign (🚧)
 ### bis 23.01.
 
 * ✅ Umstellung Datenformat auf `dc:title`
+* ✅ Antwort-Annotationen einreichen können
 * anno-frontend: Unter-Annos finden und vorerst nur chronologisch darstellen.
   <!-- Strategie zur Anzeige des Antwortbezugs:
     1.  Alle zugehörigen Annos entdecken und laden.
