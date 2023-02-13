@@ -151,16 +151,10 @@ U+1F6A7 construction sign (🚧)
 
 * ✅ Umstellung Datenformat auf `dc:title`
 * ✅ Antwort-Annotationen einreichen können
-* anno-frontend: Unter-Annos finden und vorerst nur chronologisch darstellen.
-  <!-- Strategie zur Anzeige des Antwortbezugs:
-    1.  Alle zugehörigen Annos entdecken und laden.
-    1.  Nach Datum sortieren.
-    1.  `refNums[anno.id] = '#' + listenNummer;`
-    1.  vor Title: `'Bezogen auf ' + (refNums[anno.inReplyTo] || 'unbekannt')`
-  -->
+* ✅ anno-frontend: Unter-Annos finden und vorerst nur chronologisch darstellen.
 * Bearbeiten eigener Annotationen ermöglichen.
-  * Bodies bearbeiten mit anno-frontend.
-  * Autorenkennung wechseln mit anno-frontend.
+  * ✅ Bodies bearbeiten mit anno-frontend.
+  * ✅ Autorenkennung wechseln mit anno-frontend.
   * ACL-Berechtigung: Revision zu eigener Annotation speichern…
     * … mit abweichenden Bodies
     * … mit abweichenden Targets
@@ -170,7 +164,7 @@ U+1F6A7 construction sign (🚧)
 ### bis 30.01.
 
 * Bearbeiten fremder Annotationen ermöglichen.
-  * Bodies bearbeiten mit anno-frontend.
+  * ✅ Bodies bearbeiten mit anno-frontend.
   * Autorenkennung wechseln durch manuelle Eingabe der ID.
   * ACL-Berechtigung: Revision zu fremder Annotation speichern…
     * … mit abweichenden Bodies
