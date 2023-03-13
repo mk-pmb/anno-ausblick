@@ -149,76 +149,130 @@ U+1F6A7 construction sign (🚧)
 
 ### bis 23.01.
 
-* ✅ Umstellung Datenformat auf `dc:title`
-* ✅ Antwort-Annotationen einreichen können
-* ✅ anno-frontend: Unter-Annos finden und vorerst nur chronologisch darstellen.
-* Bearbeiten eigener Annotationen ermöglichen.
-  * ✅ Bodies bearbeiten mit anno-frontend.
-  * ✅ Autorenkennung wechseln mit anno-frontend.
-  * ACL-Berechtigung: Revision zu eigener Annotation speichern…
-    * … mit abweichenden Bodies
-    * … mit abweichenden Targets
-    * … mit abweichender Autorenkennung innerhalb der erlaubten eigenen
+* ☔ Umstellung Datenformat auf `dc:title`
+* ☔ Frontend Bugfixes
 
 
 ### bis 30.01.
 
-* Bearbeiten fremder Annotationen ermöglichen.
-  * ✅ Bodies bearbeiten mit anno-frontend.
-  * Autorenkennung wechseln durch manuelle Eingabe der ID.
-  * ACL-Berechtigung: Revision zu fremder Annotation speichern…
-    * … mit abweichenden Bodies
-    * … mit abweichenden Targets
-    * … mit beliebig abweichender Autorenkennung
+* ☔ Frontend Bugfixes
+* ✅ Umstellung Datenformat auf `dc:title`
 
 
 ### bis 06.02.
 
-* Sichtbarkeit von Annotationen einschränken:
-  * Postgres Views lernen
-  * "Zurückgezogen am"-Datum verbirgt Annotationen
-    * erstmal manuell via Datenbank-Admin
-    * mittels anno-frontend einzelne Revision
-    * mittels anno-frontend optional auch alle früheren Revisionen
-  * "Veröffentlichung am"-Datum zwecks Entwurf-Stadium
-    * Zeitstempel 0 = noch nicht zur VÖ vorgesehen.
-    * Müssen dem Autor und Moderatoren trotzdem irgendwie angezeigt werden.
+* ☔ Frontend Bugfixes
+* ⏳ Frontend: Unter-Annos finden und vorerst nur chronologisch darstellen.
+* ⏳ Antwort-Annotationen einreichen können
+* ⏳ Bearbeiten eigener Annotationen ermöglichen.
 
 
 ### bis 13.02.
 
-* Eingeschränkte Sichtbarkeit:
-  Neue Annos von Moderatoren freischalten lassen.
-* Schreibschutz für Annotationen: nur noch Moderatoren dürfen updaten.
-  * Zusammen mit "Zurückgezogen am"-Datum wird daraus Möglichkeit zu
-    erzwungener Depublikation.
-  * Vorerst ohne Integration in anno-frontend:
-    Kommt hoffentlich so selten vor, dass manuell bannen
-    und in DB eintragen ausreicht.
+* ✅ Frontend: Unter-Annos finden und vorerst nur chronologisch darstellen.
+  * ✅ optional doch auch verschachtelt.
+* ✅ Antwort-Annotationen einreichen können (Frontend)
+* ⏳ Antwort-Annotationen einreichen können (Server)
+* ✅ Bearbeiten eigener Annotationen ermöglichen.
+  * ✅ Bodies bearbeiten mit anno-frontend.
+  * ✅ Autorenkennung wechseln mit anno-frontend.
+  * ✅ ACL-Berechtigung: Revision zu eigener Annotation speichern…
+    * ✅ … mit abweichenden Bodies
+    * ✅ … mit abweichenden Targets
+    * ✅ … mit abweichender Autorenkennung innerhalb der erlaubten eigenen
 
 
 ### bis 20.02.
 
+(—)
+
+
+### bis 27.02.
+
+* ✅ Antwort-Annotationen einreichen können (Server)
+* ✅ Mehr serverseitige Konsistenzprüfung für eingereichte Annotationen
+* ✅ Frontend: Zone Editor: SvgSelector verwerfen, wenn er leer wäre.
+
+
+### bis 06.03.
+
+* ✅ Bearbeiten fremder Annotationen ermöglichen.
+  * ✅ Bodies bearbeiten mit anno-frontend.
+  * ⛔ Autorenkennung wechseln durch manuelle Eingabe der ID.
+      (Zurückgestellt, weil wir es vorerst nicht brauchen.)
+  * ✅ ACL-Berechtigung: Revision zu fremder Annotation speichern…
+    * ✅ … mit abweichenden Bodies
+    * ✅ … mit abweichenden Targets
+    * ✅ … mit beliebig abweichender Autorenkennung
+* ⛔ Schreibschutz für Annotationen: nur noch Moderatoren dürfen updaten.
+  * Kommt bei uns hoffentlich so selten vor, dass wir es per ACL regeln
+    können.
+
+
+### bis 13.03.
+
+* ✅ Fehlersuche: Antwort-Annotation fehlt in Suchergebnis.
+  * Ursache war veraltete URL in importierter Annotation.
+* ✅ MongoDB-Konverter: Tools für gründlichere URL-Umwandlung.
+* 🚧 MongoDB-Konverter: Autorennamen aus User Config übernehmen.
+
+
+### bis 20.03.
+
+* Dokumentiere PATCH-Ausrede für zwangsaktualisierte Autoridentität-Details.
+* Ruhende Autoridentitäten (d.h. kein lokaler Benutzer) aus Datenbank laden.
+  * Option, ob Autor-Details als Teil der Anno gespeichert werden sollen.
+  * Vorrang-Option für wenn sowohl DB als auch Anno Autor-Details haben.
+  * Dokumentiere mögliche Lizenz-Interaktion bei Änderung von Autornamen.
+* ACL: Dokumentiere mögliche Lizenz-Problematik bei Fremdbearbeiten.
+* Server: Stempel vergeben können
+  * Stempel `iana:sunset` für geplante oder nachträgliche Depublikation.
+  * Stempel `dc:dateSubmitted` zur Beantragung der Freischaltung.
+  * Stempel `dc:dateAccepted` zur Gewährung der Freischaltung.
+* Sichtbarkeit von Annotationen einschränken:
+  * Dienst-spezifische Option "Freischaltung erforderlich"
+
+
+### bis 27.03.
+
+* Server: Verlange `as:inReplyTo`, statt Target-Art zu erraten.
+* Server: Sende `as:inReplyTo` für Antworten, zwecks Performance-Optimierung
+  in unserem Frontend.
+* MongoDB-Konverter: Benutze `as:inReplyTo` für Antworten.
+* Server: Dienst-spezifisch nur freigeschaltete Annotationen ausliefern.
+* Frontend: Einzel-Ansicht-Modus
+  * spezifische Revision anzeigen
+    (Vorbereitung für bald Freischaltungs-Ansicht)
+  * Revisionen vergleichen
+
+
+### bis 03.04.
+
+* Frontend: Einzel-Ansicht-Modus: Revisionen freischalten können.
+* RSS-Feed für freizuschaltende Annotationen.
+* Frontend: Baue Antworten-Baum mittels `as:inReplyTo`,
+  statt Target-Art zu erraten.
+
+
+### bis 10.04.
+
 * Erteilung einer DOI beantragen können.
-  * mit ACL-Bindung, Standard: verboten.
 * DOI-Vergabe manuell genehmigen können.
-  * mit ACL-Bindung, Standard: verboten.
-* anno-frontend: UI für DOI-Antrag und direkt anschließende Genehmigung,
-  falls Benutzer beides darf.
 * Manuelle direkte DOI-Vergabe.
-  * mit ACL-Bindung, Standard: verboten.
+* Frontend: UI für DOI-Antrag und direkt anschließende Genehmigung,
+  falls Benutzer beides darf.
 
 
 ### später (absteigende Priorität)
 
-* anno-frontend: Unter-Annotationen hierarchisch darstellen mit Baumstruktur
+* Frontend: Unter-Annotationen hierarchisch darstellen mit Baumstruktur
   oben und Detail-Ansicht ausgewählter Einzelannotation darunter.
 * Cron Job für Dienst-spezifische Config und ACLs synchronisieren
 * Cron Job zur Vergabe genehmigter DOIs.
 * Benachrichtigung für Moderatoren über Aktionsbedarf
 * Benachrichtigung für Autoren über Antworten auf ihre Beiträge
-* anno-frontend: neben GND-Schlagworten auch freie Schlagworte.
-* anno-frontend: Verschlagwortung mit standardisierten Nicht-GND-Vorkabularen
+* Frontend: neben GND-Schlagworten auch freie Schlagworte.
+* Frontend: Verschlagwortung mit standardisierten Nicht-GND-Vorkabularen
   * z.B. Geonames
   * ggf. auch Zeitpunkte/-spannen
   * ggf. auch Geo-Koordinaten
@@ -228,8 +282,10 @@ U+1F6A7 construction sign (🚧)
   stark redundanten YAML-Dumps (DWork "sammlung" + "oaisets")
 * Ordentliche ACL-Beschränkung für Abruf der Versionshistorie.
 * Einreichung von Annotationen nur wenn Lizenz in Liste akzeptierter Lizenzen.
-* Druckansicht für Einzelannotation
 * Aus Worddatei kopierte Endnotenverlinkungen (UBHD GitLab issue #4)
+* Frontend: [Software-Lizenzen maschinenlesbar ausweisen
+  ](https://www.gnu.org/software/librejs/free-your-javascript.html)
+
 
 
 
@@ -239,6 +295,9 @@ zurückgestellt
 * Optionaler detaillierter Vergleich der Autor-Identität, falls eine
   mitgesendet wurde. Wenn sie abweicht, verweigern statt ersetzen, denn das
   könnte bei Lizenzen wie CC-BY je nach Publikum problematisch sein.
+  * Wird eigentlich auch von Anno-Protocol vorausgesetzt, würde aber
+    in manchen Situationen zu unnötigem Unverständnis und Aufwand bei
+    den Benutzern führen.
 
 
 
