@@ -220,10 +220,6 @@ U+1F6A7 construction sign (🚧)
 ### bis 20.03.
 
 * Dokumentiere PATCH-Ausrede für zwangsaktualisierte Autoridentität-Details.
-* Ruhende Autoridentitäten (d.h. kein lokaler Benutzer) aus Datenbank laden.
-  * Option, ob Autor-Details als Teil der Anno gespeichert werden sollen.
-  * Vorrang-Option für wenn sowohl DB als auch Anno Autor-Details haben.
-  * Dokumentiere mögliche Lizenz-Interaktion bei Änderung von Autornamen.
 * ACL: Dokumentiere mögliche Lizenz-Problematik bei Fremdbearbeiten.
 * Server: Stempel vergeben können
   * Stempel `iana:sunset` für geplante oder nachträgliche Depublikation.
