@@ -263,6 +263,12 @@ U+1F6A7 construction sign (🚧)
   falls Benutzer beides darf.
 
 
+### bis 17.04.
+
+* Berechtigungs-Massenabfrage im Server
+* Berechtigungsvorschau im Frontend
+
+
 ### später (unpriorisiert)
 
 * Server: Plugin-System einbauen, Kern entschlacken für Performance
