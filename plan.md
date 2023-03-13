@@ -263,6 +263,15 @@ U+1F6A7 construction sign (🚧)
   falls Benutzer beides darf.
 
 
+### später (unpriorisiert)
+
+* Server: Plugin-System einbauen, Kern entschlacken für Performance
+  * auslagern, soweit praktikabel:
+    * Debug-Module in Plugin
+    * Benutzer-Datenbank
+    * Revisionen-Einreichungs-Code
+
+
 ### später (absteigende Priorität)
 
 * Frontend: Unter-Annotationen hierarchisch darstellen mit Baumstruktur
