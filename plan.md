@@ -272,6 +272,8 @@ U+1F6A7 construction sign (🚧)
     * Debug-Module in Plugin
     * Benutzer-Datenbank
     * Revisionen-Einreichungs-Code
+* Erforsche [Web Access Control](https://solidproject.org/TR/wac):
+  ACL standard-konformer?
 
 
 ### später (absteigende Priorität)
