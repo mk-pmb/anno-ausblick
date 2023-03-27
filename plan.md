@@ -272,6 +272,11 @@ U+1F6A7 construction sign (🚧)
 
 ### später (unpriorisiert)
 
+* Autoren sollen eigene noch auf Freischaltung wartende Annotationen sehen
+  können. &rArr; Suche nach Target mit zusätzlicher Beschränkung auf eigene
+  Autor-Identität.
+  * Einfacher und performanter: Suche nach für Einreichung verantwortlichem
+    Anno-User unabhängig der Autor-Identität.
 * Server: Prüfe, welche Anforderungen bei der Einreichung wir mittels der
   "MAY add information"-Regel oder PATCH-Ausrede lockern können, und ob
   diverse Annahme eines Datenänderungsverbots wirklich gelten.
