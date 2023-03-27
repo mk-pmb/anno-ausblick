@@ -214,22 +214,27 @@ U+1F6A7 construction sign (🚧)
 * ✅ Fehlersuche: Antwort-Annotation fehlt in Suchergebnis.
   * Ursache war veraltete URL in importierter Annotation.
 * ✅ MongoDB-Konverter: Tools für gründlichere URL-Umwandlung.
-* 🚧 MongoDB-Konverter: Autorennamen aus User Config übernehmen.
+* ✅ MongoDB-Konverter: Autorennamen aus User Config übernehmen.
 
 
 ### bis 20.03.
 
-* Dokumentiere PATCH-Ausrede für zwangsaktualisierte Autoridentität-Details.
-* ACL: Dokumentiere mögliche Lizenz-Problematik bei Fremdbearbeiten.
-* Server: Stempel vergeben können
-  * Stempel `iana:sunset` für geplante oder nachträgliche Depublikation.
-  * Stempel `dc:dateSubmitted` zur Beantragung der Freischaltung.
-  * Stempel `dc:dateAccepted` zur Gewährung der Freischaltung.
-* Sichtbarkeit von Annotationen einschränken:
-  * Dienst-spezifische Option "Freischaltung erforderlich"
+* ⛔ <s>Dokumentiere PATCH-Ausrede für zwangsaktualisierte
+  Autoridentität-Details.</s> (Änderung eher doch nicht verboten.)
+* ✅ ACL: Dokumentiere mögliche Lizenz-Problematik bei Fremdbearbeiten.
+* 🚧 Server: Stempel vergeben können
 
 
 ### bis 27.03.
+
+* ✅ Server: Stempel vergeben können
+  * ✅ Stempel `iana:sunset` für geplante oder nachträgliche Depublikation.
+  * ✅ Stempel `dc:dateSubmitted` zur Beantragung der Freischaltung.
+  * ✅ Stempel `dc:dateAccepted` zur Gewährung der Freischaltung.
+* ✅ Bugfix: Einreichung von Revisionen wieder möglich
+
+
+### bis 03.04.
 
 * Server: Verlange `as:inReplyTo`, statt Target-Art zu erraten.
 * Server: Sende `as:inReplyTo` für Antworten, zwecks Performance-Optimierung
@@ -242,7 +247,7 @@ U+1F6A7 construction sign (🚧)
   * Revisionen vergleichen
 
 
-### bis 03.04.
+### bis 10.04.
 
 * Frontend: Einzel-Ansicht-Modus: Revisionen freischalten können.
 * RSS-Feed für freizuschaltende Annotationen.
@@ -250,7 +255,7 @@ U+1F6A7 construction sign (🚧)
   statt Target-Art zu erraten.
 
 
-### bis 10.04.
+### bis 17.04.
 
 * Erteilung einer DOI beantragen können.
 * DOI-Vergabe manuell genehmigen können.
@@ -259,7 +264,7 @@ U+1F6A7 construction sign (🚧)
   falls Benutzer beides darf.
 
 
-### bis 17.04.
+### bis 24.04.
 
 * Berechtigungs-Massenabfrage im Server
 * Berechtigungsvorschau im Frontend
@@ -267,6 +272,21 @@ U+1F6A7 construction sign (🚧)
 
 ### später (unpriorisiert)
 
+* Server: Prüfe, welche Anforderungen bei der Einreichung wir mittels der
+  "MAY add information"-Regel oder PATCH-Ausrede lockern können, und ob
+  diverse Annahme eines Datenänderungsverbots wirklich gelten.
+* Server: Verbessere Container-Konformität
+  * u.a. "The IRI for the Annotation MUST be the IRI of the Container with
+    an additional component added to the end."
+  * Sende `Accept-Post`-Header
+  * LDP 5.2.3: "server-imposed constraints […] must be advertised"
+* LDP 5.2.3.9: "without requiring detailed knowledge of application-specific
+  constraints"
+* LDP 5.2.3.4 interaction model
+* LDP 5.2.8.1 link headers
+* Dokumentiere potenzielle Nichterfüllung von LDP 5.2.3.2 und 5.4.2.1
+  z.B. durch Erfordernis der Freischaltung, und wie man sie vermeiden kann.
+* Muss die Einreichung Turtle-Format akzeptieren wg. LDP 5.2.3.5?
 * Server: Plugin-System einbauen, Kern entschlacken für Performance
   * auslagern, soweit praktikabel:
     * Debug-Module in Plugin
