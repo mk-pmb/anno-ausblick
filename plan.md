@@ -241,10 +241,10 @@ U+1F6A7 construction sign (🚧)
   in unserem Frontend.
 * MongoDB-Konverter: Benutze `as:inReplyTo` für Antworten.
 * Server: Dienst-spezifisch nur freigeschaltete Annotationen ausliefern.
-* Frontend: Einzel-Ansicht-Modus
-  * spezifische Revision anzeigen
+* ✅ Frontend: Einzel-Ansicht-Modus
+  * ✅ spezifische Revision anzeigen
     (Vorbereitung für bald Freischaltungs-Ansicht)
-  * Revisionen vergleichen
+  * ✅ Revisionen vergleichen
 
 
 ### bis 10.04.
@@ -298,7 +298,9 @@ U+1F6A7 construction sign (🚧)
     * Benutzer-Datenbank
     * Revisionen-Einreichungs-Code
 * Erforsche [Web Access Control](https://solidproject.org/TR/wac):
-  ACL standard-konformer?
+  ACL Standard-konformer?
+* Frontend: Abruf der Versionshistorie: Antwortformat strenger prüfen,
+  z.B. warnen wenn nicht AnnotationCollection oder mehrere Seiten.
 
 
 ### später (absteigende Priorität)
