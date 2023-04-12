@@ -241,6 +241,9 @@ U+1F6A7 construction sign (🚧)
   in unserem Frontend.
 * MongoDB-Konverter: Benutze `as:inReplyTo` für Antworten.
 * Server: Dienst-spezifisch nur freigeschaltete Annotationen ausliefern.
+  * ✅ Bei Suche nach Target
+  * Bei Einzel-Auslieferung: Nur wenn alle beteiligten Dienste
+    Freischaltung erfordern.
 * ✅ Frontend: Einzel-Ansicht-Modus
   * ✅ spezifische Revision anzeigen
     (Vorbereitung für bald Freischaltungs-Ansicht)
@@ -249,6 +252,10 @@ U+1F6A7 construction sign (🚧)
 
 ### bis 10.04.
 
+* Server: Depublizierte Annotationen nicht ausliefern:
+  * ✅ Einzel-Auslieferung: stattdessen Fehler.
+  * Einzel-Auslieferung: Grabstein (`as:type=Tombstone`) ausliefern.
+  * In Suchergebnissen verheimlichen oder Grabstein ausliefern.
 * Frontend: Einzel-Ansicht-Modus: Revisionen freischalten können.
 * RSS-Feed für freizuschaltende Annotationen.
 * Frontend: Baue Antworten-Baum mittels `as:inReplyTo`,
