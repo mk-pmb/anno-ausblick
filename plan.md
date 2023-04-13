@@ -254,7 +254,6 @@ U+1F6A7 construction sign (🚧)
 
 * Server: Depublizierte Annotationen nicht ausliefern:
   * ✅ Einzel-Auslieferung: stattdessen Fehler.
-  * Einzel-Auslieferung: Grabstein (`as:type=Tombstone`) ausliefern.
   * In Suchergebnissen verheimlichen oder Grabstein ausliefern.
 * Frontend: Einzel-Ansicht-Modus: Revisionen freischalten können.
 * RSS-Feed für freizuschaltende Annotationen.
