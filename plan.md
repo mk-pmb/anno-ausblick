@@ -222,7 +222,7 @@ U+1F6A7 construction sign (🚧)
 * ⛔ <s>Dokumentiere PATCH-Ausrede für zwangsaktualisierte
   Autoridentität-Details.</s> (Änderung eher doch nicht verboten.)
 * ✅ ACL: Dokumentiere mögliche Lizenz-Problematik bei Fremdbearbeiten.
-* 🚧 Server: Stempel vergeben können
+* ⏳ Server: Stempel vergeben können
 
 
 ### bis 27.03.
@@ -236,32 +236,58 @@ U+1F6A7 construction sign (🚧)
 
 ### bis 03.04.
 
-* Server: Verlange `as:inReplyTo`, statt Target-Art zu erraten.
-* Server: Sende `as:inReplyTo` für Antworten, zwecks Performance-Optimierung
-  in unserem Frontend.
-* MongoDB-Konverter: Benutze `as:inReplyTo` für Antworten.
-* Server: Dienst-spezifisch nur freigeschaltete Annotationen ausliefern.
-  * ✅ Bei Suche nach Target
-  * Bei Einzel-Auslieferung: Nur wenn alle beteiligten Dienste
-    Freischaltung erfordern.
 * ✅ Frontend: Einzel-Ansicht-Modus
   * ✅ spezifische Revision anzeigen
     (Vorbereitung für bald Freischaltungs-Ansicht)
-  * ✅ Revisionen vergleichen
 
 
 ### bis 10.04.
 
-* Server: Depublizierte Annotationen nicht ausliefern:
-  * ✅ Einzel-Auslieferung: stattdessen Fehler.
-  * In Suchergebnissen verheimlichen oder Grabstein ausliefern.
+* ✅ Frontend: Revisionen vergleichen
+* ✅ Umbau der ACL-Prüfung als Vorbereitung auf Dienste mit Freischaltung
+* ✅ Annos mit fehelnder Freischaltung verbergen: In der Suche.
+* ✅ Einzel-Auslieferung beachtet Depublikationsdatum
+
+
+### bis 17.04.
+
+* ⏳ Freischaltung: Umsetzung in der Datenbank
+
+
+### bis 24.04.
+
+* ✅ Installation des Anno-Server vereinfachen + offizielle Anleitung
+
+
+### bis 02.05.
+
+* ✅ Stempel nochmal weitgehend umbauen wegen neuem Datenbank-Schema
+  für die Freischaltung
+* ✅ Suchfunktion flexibilisieren für dynamisch hinzugefügte Kriterien
+    (z.B. eben Freischaltung bzw. -sanfrage)
+* 🚧 Depublizierte Annotationen nicht ausliefern: In Suchergebnissen
+
+
+### bis 08.05.
+
+* 🚧 Einzel-Auslieferung: Verweigerung mangels Freischaltung nur wenn
+  alle beteiligten Dienste Freischaltung erfordern.
+* Autoren sehen eigene auf Freischaltung wartende Annos.
 * Frontend: Einzel-Ansicht-Modus: Revisionen freischalten können.
 * RSS-Feed für freizuschaltende Annotationen.
+
+
+### bis 15.05.
+
+* Server: Verlange `as:inReplyTo`, statt Target-Art zu erraten.
+* Server: Sende `as:inReplyTo` für Antworten, zwecks Performance-Optimierung
+  in unserem Frontend.
+* MongoDB-Konverter: Benutze `as:inReplyTo` für Antworten.
 * Frontend: Baue Antworten-Baum mittels `as:inReplyTo`,
   statt Target-Art zu erraten.
 
 
-### bis 17.04.
+### bis 22.05.
 
 * Erteilung einer DOI beantragen können.
 * DOI-Vergabe manuell genehmigen können.
@@ -270,7 +296,17 @@ U+1F6A7 construction sign (🚧)
   falls Benutzer beides darf.
 
 
-### bis 24.04.
+### bis 29.05.
+
+(—)
+
+
+### bis 05.06.
+
+(—)
+
+
+### bis 12.06.
 
 * Berechtigungs-Massenabfrage im Server
 * Berechtigungsvorschau im Frontend
