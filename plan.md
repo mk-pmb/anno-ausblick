@@ -310,35 +310,16 @@ U+1F6A7 construction sign (🚧)
 
 * Berechtigungs-Massenabfrage im Server
 * Berechtigungsvorschau im Frontend
+* Prüfen: Freischaltung von Multi-Target-Annotationen nur möglich,
+  wenn für alle Targets berechtigt.
 
 
 ### später (unpriorisiert)
 
-* Autoren sollen eigene noch auf Freischaltung wartende Annotationen sehen
-  können. &rArr; Suche nach Target mit zusätzlicher Beschränkung auf eigene
-  Autor-Identität.
-  * Einfacher und performanter: Suche nach für Einreichung verantwortlichem
-    Anno-User unabhängig der Autor-Identität.
 * Server: Prüfe, welche Anforderungen bei der Einreichung wir mittels der
   "MAY add information"-Regel oder PATCH-Ausrede lockern können, und ob
   diverse Annahme eines Datenänderungsverbots wirklich gelten.
-* Server: Verbessere Container-Konformität
-  * u.a. "The IRI for the Annotation MUST be the IRI of the Container with
-    an additional component added to the end."
-  * Sende `Accept-Post`-Header
-  * LDP 5.2.3: "server-imposed constraints […] must be advertised"
-* LDP 5.2.3.9: "without requiring detailed knowledge of application-specific
-  constraints"
-* LDP 5.2.3.4 interaction model
-* LDP 5.2.8.1 link headers
-* Dokumentiere potenzielle Nichterfüllung von LDP 5.2.3.2 und 5.4.2.1
-  z.B. durch Erfordernis der Freischaltung, und wie man sie vermeiden kann.
 * Muss die Einreichung Turtle-Format akzeptieren wg. LDP 5.2.3.5?
-* Server: Plugin-System einbauen, Kern entschlacken für Performance
-  * auslagern, soweit praktikabel:
-    * Debug-Module in Plugin
-    * Benutzer-Datenbank
-    * Revisionen-Einreichungs-Code
 * Erforsche [Web Access Control](https://solidproject.org/TR/wac):
   ACL Standard-konformer?
 * Frontend: Abruf der Versionshistorie: Antwortformat strenger prüfen,
@@ -347,6 +328,11 @@ U+1F6A7 construction sign (🚧)
 
 ### später (absteigende Priorität)
 
+* Autoren sollen eigene noch auf Freischaltung wartende Annotationen sehen
+  können. &rArr; Suche nach Target mit zusätzlicher Beschränkung auf eigene
+  Autor-Identität.
+  * Einfacher und performanter: Suche nach für Einreichung verantwortlichem
+    Anno-User unabhängig der Autor-Identität.
 * Frontend: Unter-Annotationen hierarchisch darstellen mit Baumstruktur
   oben und Detail-Ansicht ausgewählter Einzelannotation darunter.
 * Cron Job für Dienst-spezifische Config und ACLs synchronisieren
@@ -358,6 +344,22 @@ U+1F6A7 construction sign (🚧)
   * z.B. Geonames
   * ggf. auch Zeitpunkte/-spannen
   * ggf. auch Geo-Koordinaten
+* Server: Verbessere Container-Konformität
+  * u.a. "The IRI for the Annotation MUST be the IRI of the Container with
+    an additional component added to the end."
+  * Sende `Accept-Post`-Header
+  * LDP 5.2.3: "server-imposed constraints […] must be advertised"
+* LDP 5.2.3.9: "without requiring detailed knowledge of application-specific
+  constraints"
+* LDP 5.2.3.4 interaction model
+* LDP 5.2.8.1 link headers
+* Dokumentiere potenzielle Nichterfüllung von LDP 5.2.3.2 und 5.4.2.1
+  z.B. durch Erfordernis der Freischaltung, und wie man sie vermeiden kann.
+* Server: Plugin-System einbauen, Kern entschlacken für Performance
+  * auslagern, soweit praktikabel:
+    * Debug-Module in Plugin
+    * Benutzer-Datenbank
+    * Revisionen-Einreichungs-Code
 * Komfortable Nutzer-/ACL-Pflege per Webformular
   (damit das nicht immer IT machen muss)
 * ACL: Ermittlung zusätzlicher Werk-spezifischer Metadaten aus riesigen,
