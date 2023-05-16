@@ -290,6 +290,7 @@ U+1F6A7 construction sign (🚧)
 ### bis 22.05.
 
 * Erteilung einer DOI beantragen können.
+* DOI automatisch beantragen falls vorige Revision eine hatte.
 * DOI-Vergabe manuell genehmigen können.
 * Manuelle direkte DOI-Vergabe.
 * Frontend: UI für DOI-Antrag und direkt anschließende Genehmigung,
