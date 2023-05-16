@@ -265,36 +265,27 @@ U+1F6A7 construction sign (🚧)
   für die Freischaltung
 * ✅ Suchfunktion flexibilisieren für dynamisch hinzugefügte Kriterien
     (z.B. eben Freischaltung bzw. -sanfrage)
-* 🚧 Depublizierte Annotationen nicht ausliefern: In Suchergebnissen
 
 
 ### bis 08.05.
 
+* ✅ Suchfunktion fragt alle Stempel ab
+* ⏳ Suchfunktion: Datenbank-Abfrage modularisieren
+
+
+### bis 15.05.
+
+* ✅ Suchfunktion: Datenbank-Abfrage modularisieren
+* ⏳ Depublizierte Annotationen nicht ausliefern: In Suchergebnissen
+
+### bis 22.05.
+
+* 🚧 Depublizierte Annotationen nicht ausliefern: In Suchergebnissen
 * 🚧 Einzel-Auslieferung: Verweigerung mangels Freischaltung nur wenn
   alle beteiligten Dienste Freischaltung erfordern.
 * Autoren sehen eigene auf Freischaltung wartende Annos.
 * Frontend: Einzel-Ansicht-Modus: Revisionen freischalten können.
 * RSS-Feed für freizuschaltende Annotationen.
-
-
-### bis 15.05.
-
-* Server: Verlange `as:inReplyTo`, statt Target-Art zu erraten.
-* Server: Sende `as:inReplyTo` für Antworten, zwecks Performance-Optimierung
-  in unserem Frontend.
-* MongoDB-Konverter: Benutze `as:inReplyTo` für Antworten.
-* Frontend: Baue Antworten-Baum mittels `as:inReplyTo`,
-  statt Target-Art zu erraten.
-
-
-### bis 22.05.
-
-* Erteilung einer DOI beantragen können.
-* DOI automatisch beantragen falls vorige Revision eine hatte.
-* DOI-Vergabe manuell genehmigen können.
-* Manuelle direkte DOI-Vergabe.
-* Frontend: UI für DOI-Antrag und direkt anschließende Genehmigung,
-  falls Benutzer beides darf.
 
 
 ### bis 29.05.
@@ -308,6 +299,26 @@ U+1F6A7 construction sign (🚧)
 
 
 ### bis 12.06.
+
+* Server: Verlange `as:inReplyTo`, statt Target-Art zu erraten.
+* Server: Sende `as:inReplyTo` für Antworten, zwecks Performance-Optimierung
+  in unserem Frontend.
+* MongoDB-Konverter: Benutze `as:inReplyTo` für Antworten.
+* Frontend: Baue Antworten-Baum mittels `as:inReplyTo`,
+  statt Target-Art zu erraten.
+
+
+### bis 19.06.
+
+* Erteilung einer DOI beantragen können.
+* DOI automatisch beantragen falls vorige Revision eine hatte.
+* DOI-Vergabe manuell genehmigen können.
+* Manuelle direkte DOI-Vergabe.
+* Frontend: UI für DOI-Antrag und direkt anschließende Genehmigung,
+  falls Benutzer beides darf.
+
+
+### bis 26.06.
 
 * Berechtigungs-Massenabfrage im Server
 * Berechtigungsvorschau im Frontend
