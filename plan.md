@@ -284,10 +284,10 @@ U+1F6A7 construction sign (🚧)
 * 🚧 Einzel-Auslieferung: Verweigerung mangels Freischaltung nur wenn
   alle beteiligten Dienste Freischaltung erfordern.
 * ✅ Autoren sehen eigene auf Freischaltung wartende Annos.
-* Suchergebnisse, die durch privilegierte Suche trotz fehlender Freischaltung
+* ✅ Suchergebnisse, die durch privilegierte Suche trotz fehlender Freischaltung
   angezeigt werden, sollen eine entsprechende Markierung tragen, und das
   Frontend sollte darauf hinweisen.
-* Frontend: Einzel-Ansicht-Modus: Revisionen freischalten können.
+* ✅ Frontend: Einzel-Ansicht-Modus: Revisionen freischalten können.
 * RSS-Feed für freizuschaltende Annotationen.
 
 
