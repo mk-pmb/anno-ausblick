@@ -336,6 +336,9 @@ U+1F6A7 construction sign (🚧)
   ACL Standard-konformer?
 * Frontend: Abruf der Versionshistorie: Antwortformat strenger prüfen,
   z.B. warnen wenn nicht AnnotationCollection oder mehrere Seiten.
+* Weiterleitungsziel für mit Browser abgerufene Anno konfigurierbar machen,
+  insbesondere zwecks Permalink auf Kommentare.
+  Digi verwendet Scope + `/` + Slug + `/image,info`.
 
 
 ### später (absteigende Priorität)
