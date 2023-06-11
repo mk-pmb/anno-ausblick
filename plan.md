@@ -280,10 +280,10 @@ U+1F6A7 construction sign (🚧)
 
 ### bis 22.05.
 
-* 🚧 Depublizierte Annotationen nicht ausliefern: In Suchergebnissen
+* ✅ Depublizierte Annotationen nicht ausliefern: In Suchergebnissen
 * 🚧 Einzel-Auslieferung: Verweigerung mangels Freischaltung nur wenn
   alle beteiligten Dienste Freischaltung erfordern.
-* Autoren sehen eigene auf Freischaltung wartende Annos.
+* ✅ Autoren sehen eigene auf Freischaltung wartende Annos.
 * Frontend: Einzel-Ansicht-Modus: Revisionen freischalten können.
 * RSS-Feed für freizuschaltende Annotationen.
 
