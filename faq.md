@@ -3,7 +3,16 @@ Häufige Fragen und deren Antworten
 ==================================
 
 
-#### Wie wird `dc:dateAccepted` benutzt?
+### Kann ich den Anno Server schon ausprobieren?
+
+Ja, der [staging branch](https://github.com/mk-pmb/anno-server-22/tree/staging)
+beinhaltet schon die meisten wichtigen Features.
+Eine Installationsanleitung ist in der Readme verlinkt.
+
+
+
+
+### Wie wird `dc:dateAccepted` benutzt?
 
 * Dienste können für "moderierte Veröffentlichung" konfiguriert sein.
   Annotationen werden dann erst nach Freischaltung öffentlich.
