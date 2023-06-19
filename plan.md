@@ -303,12 +303,13 @@ U+1F6A7 construction sign (🚧)
 
 ### bis 12.06.
 
-* Server: Verlange `as:inReplyTo`, statt Target-Art zu erraten.
-* Server: Sende `as:inReplyTo` für Antworten, zwecks Performance-Optimierung
+* ✅ Server: Verlange `as:inReplyTo`, statt Target-Art zu erraten.
+* ✅ Server: Sende `as:inReplyTo` für Antworten, zwecks Performance-Optimierung
   in unserem Frontend.
-* MongoDB-Konverter: Benutze `as:inReplyTo` für Antworten.
-* Frontend: Baue Antworten-Baum mittels `as:inReplyTo`,
-  statt Target-Art zu erraten.
+* ✅ MongoDB-Konverter: Benutze `as:inReplyTo` für Antworten.
+* ⛔ <del>Frontend: Baue Antworten-Baum mittels `as:inReplyTo`,
+  statt Target-Art zu erraten.</del>
+  (Basierte auf falscher Annahme. Target-Art wird sowieso nicht erraten.)
 
 
 ### bis 19.06.
