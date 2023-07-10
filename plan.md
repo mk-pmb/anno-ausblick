@@ -352,6 +352,9 @@ U+1F6A7 construction sign (🚧)
 ### bis 17.07.
 
 * Falsche alte Namensgebung "Slug" und Mehrdeutigkeit von "Anno ID" abschaffen.
+* Weiterleitungsziel für mit Browser abgerufene Anno konfigurierbar machen,
+  insbesondere zwecks Permalink auf Kommentare.
+  Digi verwendet Scope + `/` + Slug + `/image,info`.
 * DOI-Bot-Adapter für DataCite: Registriert einzelne Annotation.
 
 
@@ -382,23 +385,14 @@ U+1F6A7 construction sign (🚧)
   ACL Standard-konformer?
 * Frontend: Abruf der Versionshistorie: Antwortformat strenger prüfen,
   z.B. warnen wenn nicht AnnotationCollection oder mehrere Seiten.
-* Weiterleitungsziel für mit Browser abgerufene Anno konfigurierbar machen,
-  insbesondere zwecks Permalink auf Kommentare.
-  Digi verwendet Scope + `/` + Slug + `/image,info`.
 
 
 
 ### später (absteigende Priorität)
 
-* Autoren sollen eigene noch auf Freischaltung wartende Annotationen sehen
-  können. &rArr; Suche nach Target mit zusätzlicher Beschränkung auf eigene
-  Autor-Identität.
-  * Einfacher und performanter: Suche nach für Einreichung verantwortlichem
-    Anno-User unabhängig der Autor-Identität.
 * Frontend: Unter-Annotationen hierarchisch darstellen mit Baumstruktur
   oben und Detail-Ansicht ausgewählter Einzelannotation darunter.
 * Cron Job für Dienst-spezifische Config und ACLs synchronisieren
-* Cron Job zur Vergabe genehmigter DOIs.
 * Benachrichtigung für Moderatoren über Aktionsbedarf
 * Benachrichtigung für Autoren über Antworten auf ihre Beiträge
 * Frontend: neben GND-Schlagworten auch freie Schlagworte.
