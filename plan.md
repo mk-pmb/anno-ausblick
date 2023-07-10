@@ -281,14 +281,14 @@ U+1F6A7 construction sign (🚧)
 ### bis 22.05.
 
 * ✅ Depublizierte Annotationen nicht ausliefern: In Suchergebnissen
-* 🚧 Einzel-Auslieferung: Verweigerung mangels Freischaltung nur wenn
+* ✅ Einzel-Auslieferung: Verweigerung mangels Freischaltung nur wenn
   alle beteiligten Dienste Freischaltung erfordern.
 * ✅ Autoren sehen eigene auf Freischaltung wartende Annos.
 * ✅ Suchergebnisse, die durch privilegierte Suche trotz fehlender Freischaltung
   angezeigt werden, sollen eine entsprechende Markierung tragen, und das
   Frontend sollte darauf hinweisen.
 * ✅ Frontend: Einzel-Ansicht-Modus: Revisionen freischalten können.
-* RSS-Feed für freizuschaltende Annotationen.
+* ✅ RSS-Feed für freizuschaltende Annotationen.
 
 
 ### bis 29.05.
@@ -303,26 +303,68 @@ U+1F6A7 construction sign (🚧)
 
 ### bis 12.06.
 
-* ✅ Server: Verlange `as:inReplyTo`, statt Target-Art zu erraten.
-* ✅ Server: Sende `as:inReplyTo` für Antworten, zwecks Performance-Optimierung
-  in unserem Frontend.
-* ✅ MongoDB-Konverter: Benutze `as:inReplyTo` für Antworten.
-* ⛔ <del>Frontend: Baue Antworten-Baum mittels `as:inReplyTo`,
-  statt Target-Art zu erraten.</del>
-  (Basierte auf falscher Annahme. Target-Art wird sowieso nicht erraten.)
+* ✅ Server: Markiere Suchergebnisse, die nur aufgrund von Privilegien sichtbar
+  sind, mit `{ "dc:dateAccepted": false }`.
+  <small>(Proprietäre Erweiterung. Wird nur auf privilegierten Endpoints
+  ausgegeben. Standard-konforme Endpoints verheimlichen solche Annotationen
+  einfach.)</small>
+* ✅ Frontend: Zeige, ob Annotation freigeschaltet ist oder nur aufgrund von
+  Privilegien sichtbar ist.
+* ✅ Frontend: Freischalten-Button funktioniert.
+* ✅ Frontend: Anzeige für Autoren, wenn für ihre Annotation ein
+  Freischaltungstermin in der Zukunft vorliegt. (Unser Frontend kann derzeit
+  keine Freischaltung in der Zukunft, doch kann der Anschein entstehen, wenn
+  die Uhrzeit des Browsers von der des Servers abweicht.)
 
 
 ### bis 19.06.
 
-* Erteilung einer DOI beantragen können.
-* DOI automatisch beantragen falls vorige Revision eine hatte.
-* DOI-Vergabe manuell genehmigen können.
-* Manuelle direkte DOI-Vergabe.
-* Frontend: UI für DOI-Antrag und direkt anschließende Genehmigung,
-  falls Benutzer beides darf.
+* ✅ Server: Verlange `as:inReplyTo`, statt Target-Art zu erraten.
+* ☔ Server: Sende `as:inReplyTo` für Antworten. (Leider noch buggy.)
+* ⛔ <del>Frontend: Baue Antworten-Baum mittels `as:inReplyTo`,
+  statt Target-Art zu erraten.</del>
+  (Basierte auf falscher Annahme. Target-Art wird sowieso nicht erraten.)
+* ✅ RSS-Formatierer für Anno-Listen. (Vorbereitung für RSS Feeds.)
 
 
 ### bis 26.06.
+
+* ✅ CLI Tool zum umformen von Annotationen zu Postgres-Befehlen.
+
+
+### bis 03.07.
+
+* ✅ Server sendet `as:inReplyTo` jetzt zuverlässig.
+* ✅ Frontend: Sende `as:inReplyTo` bei Einreichung.
+* ✅ URL-basierte Autorisierung für RSS-Feeds.
+
+
+### bis 10.07.
+
+* ✅ Server: RSS-Feed für auf Freischaltung wartende Annotationen.
+* ✅ Server: Halb-geheime proprietäre Stempel ermöglichen.
+  (Werden nur auf privilegierten Endpoints ausgegeben.)
+* ✅ Frontend: Erteilung einer DOI manuell genehmigen können, auch ohne Antrag
+  dafür. (Ein vorgelagertes Antragsverfahren können wir bei Bedarf ergänzen.)
+* ✅ Frontend: DOI-Vorhersage.
+
+
+### bis 17.07.
+
+* Falsche alte Namensgebung "Slug" und Mehrdeutigkeit von "Anno ID" abschaffen.
+* DOI-Bot-Adapter für DataCite: Registriert einzelne Annotation.
+
+
+### bis 24.07.
+
+* Server: Bei Einreichung automatisch DOI genehmigen, falls vorige Revision
+  eine hatte.
+  (Falls Freischaltung erforderlich ist, erteile nur bedingte Genehmigung.)
+* Generischer DOI-Bot: Ermittelt auf DOI wartende Annotationen und reicht sie
+  an Anbieter-spezifische Adapter weiter.
+
+
+### bis 31.07.
 
 * Berechtigungs-Massenabfrage im Server
 * Berechtigungsvorschau im Frontend
