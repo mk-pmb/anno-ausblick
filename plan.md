@@ -7,6 +7,7 @@ U+2615 hot beverage (☕)
 U+26A0 warning sign (⚠)
 U+26D4 no entry (⛔)
 U+2705 white heavy check mark (✅)
+U+2699 gear (⚙)
 
 U+1F4A4 sleeping symbol (💤)
 U+1F4A5 collision symbol (💥)
@@ -248,28 +249,71 @@ Planteile vergangener Jahre:
 
 ### bis 17.07.
 
-* Falsche alte Namensgebung "Slug" und Mehrdeutigkeit von "Anno ID" abschaffen.
-* Weiterleitungsziel für mit Browser abgerufene Anno konfigurierbar machen,
-  insbesondere zwecks Permalink auf Kommentare.
-  Digi verwendet Scope + `/` + Slug + `/image,info`.
-* DOI-Bot-Adapter für DataCite: Registriert einzelne Annotation.
+* ✅ Falsche alte Namensgebung "Slug" und Mehrdeutigkeit von "Anno ID"
+  beheben: im Frontend.
 
 
-### bis 24.07.
+### bis 25.07.
 
-* Server: Bei Einreichung automatisch DOI genehmigen, falls vorige Revision
-  eine hatte.
-  (Falls Freischaltung erforderlich ist, erteile nur bedingte Genehmigung.)
-* Generischer DOI-Bot: Ermittelt auf DOI wartende Annotationen und reicht sie
-  an Anbieter-spezifische Adapter weiter.
+* ✅ Falsche Namensgebung … beheben: in anno-server-22.
 
 
 ### bis 31.07.
+
+* ⏳ Falsche Namensgebung … beheben: im Mongo-Umwandler.
+
+
+### bis 07.08.
+
+(—)
+
+
+### bis 14.08.
+
+* ✅ Falsche Namensgebung … beheben: im Mongo-Umwandler.
+* ⚙ Installation und -sanleitung testen/verbessern
+* ⏳ DataCite DOI Bot Adapter
+
+
+### bis 21.08.
+
+* ⚙ Installation und -sanleitung testen/verbessern
+* ⏳ DataCite DOI Bot Adapter
+
+
+### bis 29.08.
+
+* ⚙ Installation und -sanleitung testen/verbessern
+* ✅ DataCite DOI Bot Adapter: Meta Data Mapping funktioniert.
+* ✅ Standard-konformere Darstellung unserer Semantic Tags recherchiert.
+
+
+### bis 04.09.
+
+* Frontend: Sprach-Auswahl
+* Weiterleitungsziel für mit Browser abgerufene Anno konfigurierbar machen,
+  insbesondere zwecks Permalink auf Kommentare.
+  Digi verwendet Scope + `/` + Slug + `/image,info`.
+* Generischer DOI-Bot: Ermittelt auf DOI wartende Annotationen und reicht sie
+  an Anbieter-spezifische Adapter weiter.
+* Server: Bei Einreichung automatisch DOI genehmigen, falls vorige Revision
+  eine hatte.
+  (Falls Freischaltung erforderlich ist, erteile nur bedingte Genehmigung.)
+  * DOI-Automatismen per Config abschaltbar machen.
+
+
+### bis 11.09.
 
 * Berechtigungs-Massenabfrage im Server
 * Berechtigungsvorschau im Frontend
 * Prüfen: Freischaltung von Multi-Target-Annotationen nur möglich,
   wenn für alle Targets berechtigt.
+
+
+### bis 18.09.
+
+* Zusammenspiel von Frontend und DOI Bot testen/debuggen.
+
 
 
 ### später (unpriorisiert)
