@@ -326,6 +326,9 @@ Planteile vergangener Jahre:
   ACL Standard-konformer?
 * Frontend: Abruf der Versionshistorie: Antwortformat strenger prüfen,
   z.B. warnen wenn nicht AnnotationCollection oder mehrere Seiten.
+* Sicherstellen, dass alle administrativen Einreichungswege (z.B. anno2pg)
+  Stempel-relevante Felder wie `dc:dateAccepted` und `iana:sunset` als
+  Stempel speichern statt nur in `anno_data.details`.
 
 
 
