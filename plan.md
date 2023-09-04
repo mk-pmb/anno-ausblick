@@ -290,10 +290,15 @@ Planteile vergangener Jahre:
 
 ### bis 04.09.
 
-* Frontend: Sprach-Auswahl
-* Weiterleitungsziel für mit Browser abgerufene Anno konfigurierbar machen,
+* ✅ Frontend: Sprach-Auswahl
+* ✅ Semantic Tags umbenennen zu Semantic Links.
+* ✅ Weiterleitungsziel für mit Browser abgerufene Anno konfigurierbar machen,
   insbesondere zwecks Permalink auf Kommentare.
   Digi verwendet Scope + `/` + Slug + `/image,info`.
+
+
+### bis 11.09.
+
 * Generischer DOI-Bot: Ermittelt auf DOI wartende Annotationen und reicht sie
   an Anbieter-spezifische Adapter weiter.
 * Server: Bei Einreichung automatisch DOI genehmigen, falls vorige Revision
@@ -302,7 +307,7 @@ Planteile vergangener Jahre:
   * DOI-Automatismen per Config abschaltbar machen.
 
 
-### bis 11.09.
+### bis 18.09.
 
 * Berechtigungs-Massenabfrage im Server
 * Berechtigungsvorschau im Frontend
@@ -310,7 +315,7 @@ Planteile vergangener Jahre:
   wenn für alle Targets berechtigt.
 
 
-### bis 18.09.
+### bis 25.09.
 
 * Zusammenspiel von Frontend und DOI Bot testen/debuggen.
 
@@ -329,6 +334,11 @@ Planteile vergangener Jahre:
 * Sicherstellen, dass alle administrativen Einreichungswege (z.B. anno2pg)
   Stempel-relevante Felder wie `dc:dateAccepted` und `iana:sunset` als
   Stempel speichern statt nur in `anno_data.details`.
+* Semantic Links: Prädikate vereinfachen: Anno-Model enthält `dc:` als
+  Namensraum, wir brauchen da also keine vollen URLs.
+* Frontend: Freitext-Schlagworte erlauben
+* Frontend: Auswahl für Lizenz und Sprache nur bei Bedarf aufklappen
+  (insb. wenn noch nicht gewählt), sonst zugeklappt kompakt nebeneinander.
 
 
 
