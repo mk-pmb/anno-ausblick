@@ -299,15 +299,47 @@ Planteile vergangener Jahre:
 
 ### bis 11.09.
 
-* Generischer DOI-Bot: Ermittelt auf DOI wartende Annotationen und reicht sie
-  an Anbieter-spezifische Adapter weiter.
+* ✅ Frontend: Sprache Pflichtfeld wenn Text vorhanden.
+* ✅ Frontend: Sprach-Dropdown im Bootstrap-Stil.
+* ✅ Frontend: Vorschau im Editor verbirgt untere Buttonbar.
+* ✅ Frontend: Versionsauswahl-Dropdown durch Versionshistorie-Button ersetzt.
+
+
+### bis 18.09.
+
+* ✅ Frontend: Config + API: Letzte Rückstände des alten Begriffs "Revision"
+  auf "Version" geändert.
+* ⏳ Server: ACL-Prüfung für Versionshistorie
+  * Auf dem Weg dahin viele neue Freischaltung-bezogene Bugs entdeckt.
+
+
+### bis 25.09.
+
+* ✅ Bugfix: Bearbeitung fremder Beiträge wieder möglich.
+* Bugfix: Moderator soll nach Bearbeitung fremder Beiträge die neue Version
+  sehen dürfen (v.a. zwecks dann auch freischalten).
+* Server: Ablehnung wegen veraltetem `dc:replaces`-Bezug:
+  Fehlermeldung soll `iana:working-copy` angeben.
+* Server: Versionshistorie soll `iana:working-copy` angeben.
+* ⏳ Server: ACL-Prüfung für Versionshistorie
 * Server: Bei Einreichung automatisch DOI genehmigen, falls vorige Revision
   eine hatte.
   (Falls Freischaltung erforderlich ist, erteile nur bedingte Genehmigung.)
   * DOI-Automatismen per Config abschaltbar machen.
 
 
-### bis 18.09.
+### bis 02.10.
+
+* Latest Version Redirect soll Freischaltung und Depublikation beachten.
+* Latest Version Redirect soll `working-copy` Header angeben.
+* Frontend: Wenn Fehlermeldung einen `working-copy` Header hat und der vom
+  eingereichten `dc:replaces` abweicht, biete an, mit geändertem `dc:replaces`
+  zu wiederholen.
+* Generischer DOI-Bot: Ermittelt auf DOI wartende Annotationen und reicht sie
+  an Anbieter-spezifische Adapter weiter.
+
+
+### bis 09.10.
 
 * Berechtigungs-Massenabfrage im Server
 * Berechtigungsvorschau im Frontend
@@ -315,9 +347,10 @@ Planteile vergangener Jahre:
   wenn für alle Targets berechtigt.
 
 
-### bis 25.09.
+### bis 16.10.
 
 * Zusammenspiel von Frontend und DOI Bot testen/debuggen.
+
 
 
 
