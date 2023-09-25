@@ -356,6 +356,8 @@ Planteile vergangener Jahre:
 
 ### später (unpriorisiert)
 
+<details>
+
 * Server: Prüfe, welche Anforderungen bei der Einreichung wir mittels der
   "MAY add information"-Regel oder PATCH-Ausrede lockern können, und ob
   diverse Annahme eines Datenänderungsverbots wirklich gelten.
@@ -373,9 +375,13 @@ Planteile vergangener Jahre:
 * Frontend: Auswahl für Lizenz und Sprache nur bei Bedarf aufklappen
   (insb. wenn noch nicht gewählt), sonst zugeklappt kompakt nebeneinander.
 
+</details>
+
 
 
 ### später (absteigende Priorität)
+
+<details>
 
 * Frontend: Unter-Annotationen hierarchisch darstellen mit Baumstruktur
   oben und Detail-Ansicht ausgewählter Einzelannotation darunter.
@@ -413,11 +419,14 @@ Planteile vergangener Jahre:
 * Frontend: [Software-Lizenzen maschinenlesbar ausweisen
   ](https://www.gnu.org/software/librejs/free-your-javascript.html)
 
+</details>
 
 
 
 zurückgestellt
 ==============
+
+<details>
 
 * Optionaler detaillierter Vergleich der Autor-Identität, falls eine
   mitgesendet wurde. Wenn sie abweicht, verweigern statt ersetzen, denn das
@@ -426,6 +435,7 @@ zurückgestellt
     in manchen Situationen zu unnötigem Unverständnis und Aufwand bei
     den Benutzern führen.
 
+</details>
 
 
 
