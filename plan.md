@@ -316,6 +316,10 @@ Planteile vergangener Jahre:
 ### bis 25.09.
 
 * ✅ Bugfix: Bearbeitung fremder Beiträge wieder möglich.
+* ✅ Bugfix: Frontend: Versionsauswahländerung und ihr Hook funktionieren
+  wieder auch für den neueste-Version-Eintrag.
+* ⏳ Suchergebnisse debuggen: Anscheinend sickern Daten von nicht
+  freigeschalteter Version durch?
 * Bugfix: Moderator soll nach Bearbeitung fremder Beiträge die neue Version
   sehen dürfen (v.a. zwecks dann auch freischalten).
 * Server: Ablehnung wegen veraltetem `dc:replaces`-Bezug:
