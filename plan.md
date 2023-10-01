@@ -320,39 +320,40 @@ Planteile vergangener Jahre:
   wieder auch für den neueste-Version-Eintrag.
 * ⏳ Suchergebnisse debuggen: Anscheinend sickern Daten von nicht
   freigeschalteter Version durch?
-* Bugfix: Moderator soll nach Bearbeitung fremder Beiträge die neue Version
-  sehen dürfen (v.a. zwecks dann auch freischalten).
-* Server: Ablehnung wegen veraltetem `dc:replaces`-Bezug:
-  Fehlermeldung soll `iana:working-copy` angeben.
-* Server: Versionshistorie soll `iana:working-copy` angeben.
-* ⏳ Server: ACL-Prüfung für Versionshistorie
-* Server: Bei Einreichung automatisch DOI genehmigen, falls vorige Revision
-  eine hatte.
-  (Falls Freischaltung erforderlich ist, erteile nur bedingte Genehmigung.)
-  * DOI-Automatismen per Config abschaltbar machen.
 
 
 ### bis 02.10.
 
+* ✅ Server Bugfix: Verabsolutiere bei Einreichung relative URLs in vielen
+  Feldern. (Relevant v.a. beim Import von Test Fixtures.)
+* ✅ Server Bugfix: Dangling Promise bei ACL-Prüfung für Einzelannotation.
+* ✅ Server: Ablehnung wegen veraltetem `dc:replaces`-Bezug:
+  Fehlermeldung soll `iana:working-copy` angeben.
+
+
+
+
+### nahe Zukunft
+
+* ⏳ Server: ACL-Prüfung für Versionshistorie
+* Server: Versionshistorie soll `iana:working-copy` angeben.
 * Latest Version Redirect soll Freischaltung und Depublikation beachten.
 * Latest Version Redirect soll `working-copy` Header angeben.
+* Bugfix: Moderator soll nach Bearbeitung fremder Beiträge die neue Version
+  sehen dürfen (v.a. zwecks dann auch freischalten).
+* Server: Bei Einreichung automatisch DOI genehmigen, falls vorige Revision
+  eine hatte.
+  (Falls Freischaltung erforderlich ist, erteile nur bedingte Genehmigung.)
+  * DOI-Automatismen per Config abschaltbar machen.
 * Frontend: Wenn Fehlermeldung einen `working-copy` Header hat und der vom
   eingereichten `dc:replaces` abweicht, biete an, mit geändertem `dc:replaces`
   zu wiederholen.
 * Generischer DOI-Bot: Ermittelt auf DOI wartende Annotationen und reicht sie
   an Anbieter-spezifische Adapter weiter.
-
-
-### bis 09.10.
-
 * Berechtigungs-Massenabfrage im Server
 * Berechtigungsvorschau im Frontend
 * Prüfen: Freischaltung von Multi-Target-Annotationen nur möglich,
   wenn für alle Targets berechtigt.
-
-
-### bis 16.10.
-
 * Zusammenspiel von Frontend und DOI Bot testen/debuggen.
 
 
