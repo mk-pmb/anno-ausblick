@@ -423,6 +423,9 @@ Planteile vergangener Jahre:
 * Aus Worddatei kopierte Endnotenverlinkungen (UBHD GitLab issue #4)
 * Frontend: [Software-Lizenzen maschinenlesbar ausweisen
   ](https://www.gnu.org/software/librejs/free-your-javascript.html)
+* Server: Abruf der "aktuelle Version"-URL mit Header `Accept-Datetime`
+  soll den Suchzeitraum einschränken.
+* Server: Header `Accept-Datetime` für Suche nach Subject Target URL
 
 </details>
 
