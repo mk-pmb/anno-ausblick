@@ -331,6 +331,16 @@ Planteile vergangener Jahre:
   Fehlermeldung soll `iana:working-copy` angeben.
 
 
+### bis 09.10.
+
+* ✅ Doku: FAQ: Warum greift der DOI-Bot nicht direkt auf die Datenbank zu?
+* ✅ Server Bugfix: Datenbank-Schema auf Multi Target Annos angepasst.
+* ✅ Frontend: pURL-Button ausblenden wenn DOI vorhanden.
+
+
+### bis 16.10.
+
+
 
 
 ### nahe Zukunft

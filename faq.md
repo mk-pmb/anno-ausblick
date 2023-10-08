@@ -136,20 +136,43 @@ Beispiel-Adresse: `http://anno.test/annos/b98243fb~1`
 
 
 
+### Warum greift der DOI-Bot nicht direkt auf die Datenbank zu?
+
+* Die Beschränkung auf die öffentlich abrufbaren Annotations-Schnittstelle
+  als Datenquelle für den DOI-Bot ist eine Datenschutzmaßnahme, die auf
+  einfache Weise sicherstellt, dass als Metadaten für die DOI ausschließlich
+  Daten verwendet werden, die sowieso öffentlich abrufbar wären.
+  * Jedes Fehlerpotenzial durch zwischen DOI-Bot und `anno-server-22`
+    abweichende Berechtigungs-Konfiguration wird dadurch vermieden.
+* Die Beschränkung auf Stempelung per HTTP PATCH zwecks Speicherung der
+  vergebenen DOIs ist eine Sicherheitsmaßnahme, die das Schadenspotenzial
+  eines fehlfunktionierenden (inklusive unerlaubt fremdgesteuerten) DOI-Bots
+  reduziert (Principle of least privilege).
+  * Insbesondere wird so vermieden, dem DOI-Bot Datenbank-Zugangsdaten
+    hinterlegen zu müssen, mit denen bei alltagsüblichen Konfigurationen
+    wesentlich mehr Schaden möglich wäre als nur die Eintragung fiktiver DOIs.
+  * Die Autorisierung mittels unbewiesener Behauptung eines Benutzernamens
+    innerhalb eines von Docker geschützten virtuellen Netzwerks nutzt exakt
+    die von `anno-server-22` auch für menschliche Moderatoren vorgesehene
+    Autorisierung, sodass durch den DOI-Bot keine zusätzliche Angriffsfläche
+    entsteht.
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
   [w3-anno-model]: https://www.w3.org/TR/annotation-model/#annotations
   [wp-seo-slug]: https://en.wikipedia.org/wiki/Slug_(web_publishing)
-
-
-
-
-
-
-
-
 
 
 
