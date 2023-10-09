@@ -336,6 +336,8 @@ Planteile vergangener Jahre:
 * ✅ Doku: FAQ: Warum greift der DOI-Bot nicht direkt auf die Datenbank zu?
 * ✅ Server Bugfix: Datenbank-Schema auf Multi Target Annos angepasst.
 * ✅ Frontend: pURL-Button ausblenden wenn DOI vorhanden.
+* ✅ Frontend: Weise auf ggf. weitere Untersuchungsgegenstände hin.
+* ✅ Frontend: Einzelansicht: Zeige ggf. Link zu beantworteter Annotation.
 
 
 ### bis 16.10.
