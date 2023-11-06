@@ -342,26 +342,61 @@ Planteile vergangener Jahre:
 
 ### bis 16.10.
 
+* ✅ Neues Freischaltung-Konzept: "Freischaltung fehlt"-Stempel bei Einreichung
+  wenn der Dienst es vorsieht, und unterbleibt bei unmoderierten Diensten.
+  * ✅ Automatische Stempelung bei Einreichung funktioniert.
+  * ✅ Einzelabruf beachtet den "Freischaltung fehlt"-Stempel.
+  * ✅ Bei mangels Freischaltung verweigertem Einzelabruf werden die Header
+    "Version-History" und "Latest-Version" mitgesendet, damit man eine
+    Chance hat, eine frühere Version zu entdecken.
 
+
+### bis 23.10.
+
+* ✅ Suche funktioniert mit neuem Freischalt-Ansatz.
+* ✅ Frontend: Debug Panel zeigt wieder auch proprietäre Felder.
+* ✅ Frontend: DOI-Button zeigt, ob echte DOI oder nur Vorschau.
+* ✅ RSS für auf Freischaltung wartende Annos ist umgestellt.
+* ✅ Stempel haben Effekt-Einhängepunkte zur Vor- und Nachbereitung.
+
+
+### bis 30.10.
+
+(—)
+
+
+### bis 06.11.
+
+* ✅ Bugfix: Öffentlicher Endpunkt verheimlicht nicht freigeschaltete
+  Einzelannos wieder.
+* ✅ Neue proprietäre API zum Abruf nicht freigeschalteter Einzelannos.
+  * ✅ Frontend: Freischalt-Ansicht auf die neue API umrüsten.
+
+
+### bis 13.11.
+
+* Latest Version Redirect soll Freischaltung und Depublikation beachten.
+* Latest Version Redirect soll `working-copy` Header angeben.
+* Server: Versionshistorie auf neue Freischaltung umrüsten
+* Server: Versionshistorie soll `iana:working-copy` angeben.
+* Versions-Historie im Frontend reparieren
+* Stempel-Effekte für Freischaltung implementieren
+* Server: Bei Einreichung automatisch DOI genehmigen, falls vorige Revision
+  eine hatte.
+  (Falls Freischaltung erforderlich ist, erteile nur bedingte Genehmigung.)
+  * DOI-Automatismen per Config abschaltbar machen.
+* Generischer DOI-Bot: Ermittelt auf DOI wartende Annotationen und reicht sie
+  an Anbieter-spezifische Adapter weiter.
 
 
 ### nahe Zukunft
 
 * ⏳ Server: ACL-Prüfung für Versionshistorie
-* Server: Versionshistorie soll `iana:working-copy` angeben.
-* Latest Version Redirect soll Freischaltung und Depublikation beachten.
-* Latest Version Redirect soll `working-copy` Header angeben.
 * Bugfix: Moderator soll nach Bearbeitung fremder Beiträge die neue Version
   sehen dürfen (v.a. zwecks dann auch freischalten).
-* Server: Bei Einreichung automatisch DOI genehmigen, falls vorige Revision
-  eine hatte.
-  (Falls Freischaltung erforderlich ist, erteile nur bedingte Genehmigung.)
-  * DOI-Automatismen per Config abschaltbar machen.
 * Frontend: Wenn Fehlermeldung einen `working-copy` Header hat und der vom
   eingereichten `dc:replaces` abweicht, biete an, mit geändertem `dc:replaces`
   zu wiederholen.
-* Generischer DOI-Bot: Ermittelt auf DOI wartende Annotationen und reicht sie
-  an Anbieter-spezifische Adapter weiter.
 * Berechtigungs-Massenabfrage im Server
 * Berechtigungsvorschau im Frontend
 * Prüfen: Freischaltung von Multi-Target-Annotationen nur möglich,
@@ -375,6 +410,8 @@ Planteile vergangener Jahre:
 
 <details>
 
+* Postgres-Adaper: Umhülle mehrteilige Datenbank-Interkationen mit
+  [Transaktionen](https://node-postgres.com/features/transactions).
 * Server: Prüfe, welche Anforderungen bei der Einreichung wir mittels der
   "MAY add information"-Regel oder PATCH-Ausrede lockern können, und ob
   diverse Annahme eines Datenänderungsverbots wirklich gelten.
