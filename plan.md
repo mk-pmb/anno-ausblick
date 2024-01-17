@@ -415,6 +415,9 @@ Planteile vergangener Jahre:
 * Server: Prüfe, welche Anforderungen bei der Einreichung wir mittels der
   "MAY add information"-Regel oder PATCH-Ausrede lockern können, und ob
   diverse Annahme eines Datenänderungsverbots wirklich gelten.
+* ACL: Können wir mehrere Targets und Privilegien im selben Durchgang prüfen?
+* ACL: Können wir machen, dass für Versionshistorie in Freischalt-Ansicht
+  Freischaltberechtigung auf ein einziges Target ausreicht?
 * Muss die Einreichung Turtle-Format akzeptieren wg. LDP 5.2.3.5?
 * Erforsche [Web Access Control](https://solidproject.org/TR/wac):
   ACL Standard-konformer?
