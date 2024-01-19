@@ -81,6 +81,10 @@ Planteile vergangener Jahre:
 
 <details>
 
+* Frontend: Versionshistorie: Schloss in Auswahlliste wenn widerrufen.
+* Frontend: Versionshistorie: Zeige Bearbeiten-Schltfläche nur für neueste.
+* Frontend: Debug: Zalgo bearbeiten können solange noch nicht freigeschaltet.
+
 * Postgres-Adaper: Umhülle mehrteilige Datenbank-Interkationen mit
   [Transaktionen](https://node-postgres.com/features/transactions).
 * Server: Versionshistorie soll `iana:working-copy` angeben.
