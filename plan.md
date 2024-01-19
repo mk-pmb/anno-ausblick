@@ -375,30 +375,53 @@ Planteile vergangener Jahre:
 
 ### bis 13.11.
 
-* Latest Version Redirect soll Freischaltung und Depublikation beachten.
-* Latest Version Redirect soll `working-copy` Header angeben.
-* Server: Versionshistorie auf neue Freischaltung umrüsten
-* Server: Versionshistorie soll `iana:working-copy` angeben.
-* Versions-Historie im Frontend reparieren
-* Stempel-Effekte für Freischaltung implementieren
+* ✅ Latest Version Redirect soll Freischaltung und Depublikation beachten.
+* ✅ Latest Version Redirect soll `working-copy` Header angeben.
+* ✅ Server: Versionshistorie auf neue Freischaltung umrüsten
+* ✅ Versions-Historie im Frontend reparieren
+* ✅ Stempel-Effekte für Freischaltung implementieren
+
+
+### bis 08.01.
+
+* ✅ Generischer DOI-Bot: Ermittelt auf DOI wartende Annotationen und reicht sie
+  an Anbieter-spezifische Adapter weiter.
+  * ✅ DOI-Bot funktioniert mit Dummy-Debug-Adapter
+
+
+### bis 15.01.
+
+* ✅ DOIs veröffentlichen (statt nur Draft speichern).
+* ✅ DOI-Bot ignoriert jetzt Lücken in der Versionshistorie.
+* ✅ DOI-Bot beschwert sich jetzt wenn der RSS Feed kaputt ist
+  (z.B. weil Anno Server noch nicht gestartet).
+* ✅ DOI-Bot sammelt einen kumulativen "fail score" über mehrere Botläufe
+  hinweg, und resetet ihn bei erfolgreichem Botlauf.
+* ✅ DOI-Bot startet jetzt automatisch neu und wartet dann erstmal.
+* ✅ DOI-Bot Logs zeigen jetzt an relevanten Stellen Datum und Zeit.
+
+
+### bis 22.01.
+
+* DOI-Bot: Neu registrierte DOIs aufstempeln
+* Server: Bei DOI-Stempel den DOI-Bedarf-Stempel löschen
 * Server: Bei Einreichung automatisch DOI genehmigen, falls vorige Revision
   eine hatte.
   (Falls Freischaltung erforderlich ist, erteile nur bedingte Genehmigung.)
   * DOI-Automatismen per Config abschaltbar machen.
-* Generischer DOI-Bot: Ermittelt auf DOI wartende Annotationen und reicht sie
-  an Anbieter-spezifische Adapter weiter.
+* DOI-Bot: Erfolgs- und Fehlerberichte als RSS ausgeben
+
+
+### bis 29.01.
+
+* DOI-Bot Installationsanleitung (möglichst schon bis 24.1.)
+* Berechtigungsvorschau im Frontend
+* Bugfix: Moderator soll nach Bearbeitung fremder Beiträge die neue Version
+  sehen dürfen (v.a. zwecks dann auch freischalten).
 
 
 ### nahe Zukunft
 
-* ⏳ Server: ACL-Prüfung für Versionshistorie
-* Bugfix: Moderator soll nach Bearbeitung fremder Beiträge die neue Version
-  sehen dürfen (v.a. zwecks dann auch freischalten).
-* Frontend: Wenn Fehlermeldung einen `working-copy` Header hat und der vom
-  eingereichten `dc:replaces` abweicht, biete an, mit geändertem `dc:replaces`
-  zu wiederholen.
-* Berechtigungs-Massenabfrage im Server
-* Berechtigungsvorschau im Frontend
 * Prüfen: Freischaltung von Multi-Target-Annotationen nur möglich,
   wenn für alle Targets berechtigt.
 * Zusammenspiel von Frontend und DOI Bot testen/debuggen.
@@ -412,6 +435,14 @@ Planteile vergangener Jahre:
 
 * Postgres-Adaper: Umhülle mehrteilige Datenbank-Interkationen mit
   [Transaktionen](https://node-postgres.com/features/transactions).
+* Server: Versionshistorie soll `iana:working-copy` angeben.
+  (Größere Tüftelei: Wie ins MultiSearch SQL einschieben damit geschickt?)
+  * Auch Suchergebnisse für Autoren sollen `iana:working-copy` angeben.
+* Frontend: Wenn Fehlermeldung einen `working-copy` Header hat und der vom
+  eingereichten `dc:replaces` abweicht, biete an, mit geändertem `dc:replaces`
+  zu wiederholen.
+
+
 * Server: Prüfe, welche Anforderungen bei der Einreichung wir mittels der
   "MAY add information"-Regel oder PATCH-Ausrede lockern können, und ob
   diverse Annahme eines Datenänderungsverbots wirklich gelten.
