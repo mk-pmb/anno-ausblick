@@ -51,21 +51,76 @@ Planteile vergangener Jahre:
 
 ### bis 22.01.
 
-* DOI-Bot: Neu registrierte DOIs aufstempeln
-* Server: Bei DOI-Stempel den DOI-Bedarf-Stempel löschen
-* Server: Bei Einreichung automatisch DOI genehmigen, falls vorige Revision
-  eine hatte.
-  (Falls Freischaltung erforderlich ist, erteile nur bedingte Genehmigung.)
-  * DOI-Automatismen per Config abschaltbar machen.
-* DOI-Bot: Erfolgs- und Fehlerberichte als RSS ausgeben
+* ✅ Bessere Tests und Debug-Tools für den DataCite-Adapter
+* ☔ DataCite API debuggen
+* ✅ Server: Bei DOI-Stempelung, lösche den DOI-Bedarf-Stempel.
+* ✅ DOI-Bot: Installationsanleitung
 
 
 ### bis 29.01.
 
-* DOI-Bot Installationsanleitung (möglichst schon bis 24.1.)
-* Berechtigungsvorschau im Frontend
-* Bugfix: Moderator soll nach Bearbeitung fremder Beiträge die neue Version
+* ✅ Bugfix: Moderator soll nach Bearbeitung fremder Beiträge die neue Version
   sehen dürfen (v.a. zwecks dann auch freischalten).
+* ✅ DOI Bot: Bei Annos, die schon eine DOI haben, die alte DOI (mit ggf.
+  noch Tilde) verwenden.
+* ✅ DOI für Latest Version Redirect registrieren funktioniert testweise im
+  DataCite-Adapter.
+* ✅ DOI Bot: doppelte Absicherung: Abbruch, wenn die zu updatende DOI von in
+  Anno deklarierter (schon vorhandener) DOI abweicht.
+* ✅ Server: Installationsanleitung verbessert
+* ✅ Neu registrierte DOIs aufstempeln funktioniert seitens DOI-Bot,
+  * ☔ aber der Server verweigert (neuer ACL Bug).
+
+
+### bis 05.02.
+
+(–)
+
+
+### bis 12.02.
+
+* ✅ ACL-Bug beim DOI aufstempeln debuggt
+
+
+### bis 19.02.
+
+* ✅ Server: Bei Einreichung automatisch DOI genehmigen, falls vorige Revision
+  eine hatte.
+  * ✅ DOI-Automatismen per Config abschaltbar machen.
+
+
+### bis 26.02.
+
+* ✅ Server: Config-Mechanismus zur Einbindung beliebiger Zusatzdaten
+* ✅ Server: Doku für neues ACL-Konzept
+
+
+### bis 04.03.
+
+* ✅ Neue ACL-Features (Schleifen + Zusatzdaten laden) funktionieren.
+* ✅ Frontend: Planung für neuen Zoneneditor
+* ✅ Frontend zur testweisen Einbindung eines externen
+  Zoneneditors vorbereitet.
+
+
+### bis 11.03.
+
+* ✅ Bugfixes in neuen ACL-Beispieldateien
+* ✅ DOI-Bot: Informativere Fehlermeldungen
+
+
+### bis 18.03.
+
+* ✅ DOI-Bot: RSS-Suche über Docker-internes Netzwerk
+* ✅ DOI für Latest Version Redirect registrieren/updaten
+* DOI-Bot: Erfolgs- und Fehlerberichte als RSS ausgeben.
+
+
+### bis 25.03.
+
+* Frontend: Berechtigungsvorschau
+* Doku: Übersicht der Konfigurationsmöglichkeiten
+
 
 
 ### nahe Zukunft
