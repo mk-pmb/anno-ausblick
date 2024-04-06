@@ -170,6 +170,8 @@ Planteile vergangener Jahre:
 * Frontend: Auswahl für Lizenz und Sprache nur bei Bedarf aufklappen
   (insb. wenn noch nicht gewählt), sonst zugeklappt kompakt nebeneinander.
 
+* [Annotorious](https://annotorious.github.io/) erkunden
+
 </details>
 
 
