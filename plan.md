@@ -167,22 +167,30 @@ Planteile vergangener Jahre:
 
 ### nahe Zukunft
 
+* Frontend: Unter-Annotationen hierarchisch darstellen mit Baumstruktur
+  oben und Detail-Ansicht ausgewählter Einzelannotation darunter.
+* Cron Job: Digi-Metadaten updaten
+
+-----
+
+* Frontend: neben GND-Schlagworten auch freie Schlagworte.
+* Frontend: Verschlagwortung mit standardisierten Nicht-GND-Vorkabularen
+  * Projekt-spezifische Vorkabulare
+    * Abruf via Nils' Normdatenserver? Lässt sich der GND-Code wiederverwenden?
+  * ggf. auch Zeitpunkte/-spannen
+  * ggf. auch Geo-Koordinaten
+* Annotationen mit IIIF v3 kompatibel machen,
+  Mirador 3 Zonendarstellung erforschen.
+  * IIIF hat auch "Annotation" aber die projizieren Bilder auf Canvases.
+  * IIIF v2 ignorieren.
+
+
 
 
 ### später (absteigende Priorität)
 
 <details>
 
-* Frontend: Unter-Annotationen hierarchisch darstellen mit Baumstruktur
-  oben und Detail-Ansicht ausgewählter Einzelannotation darunter.
-* Cron Job für Dienst-spezifische Config und ACLs synchronisieren
-* Benachrichtigung für Moderatoren über Aktionsbedarf
-* Benachrichtigung für Autoren über Antworten auf ihre Beiträge
-* Frontend: neben GND-Schlagworten auch freie Schlagworte.
-* Frontend: Verschlagwortung mit standardisierten Nicht-GND-Vorkabularen
-  * z.B. Geonames
-  * ggf. auch Zeitpunkte/-spannen
-  * ggf. auch Geo-Koordinaten
 * Server: Verbessere Container-Konformität
   * u.a. "The IRI for the Annotation MUST be the IRI of the Container with
     an additional component added to the end."
@@ -211,6 +219,8 @@ Planteile vergangener Jahre:
 * Server: Abruf der "aktuelle Version"-URL mit Header `Accept-Datetime`
   soll den Suchzeitraum einschränken.
 * Server: Header `Accept-Datetime` für Suche nach Subject Target URL
+* Benachrichtigung für Autoren über Antworten auf ihre Beiträge
+* Frontend: Verschlagwortung mit Geonames
 
 </details>
 
@@ -228,8 +238,6 @@ Planteile vergangener Jahre:
 * Frontend: Wenn Fehlermeldung einen `working-copy` Header hat und der vom
   eingereichten `dc:replaces` abweicht, biete an, mit geändertem `dc:replaces`
   zu wiederholen.
-
-
 * Server: Prüfe, welche Anforderungen bei der Einreichung wir mittels der
   "MAY add information"-Regel oder PATCH-Ausrede lockern können, und ob
   diverse Annahme eines Datenänderungsverbots wirklich gelten.
@@ -249,7 +257,7 @@ Planteile vergangener Jahre:
 * Frontend: Freitext-Schlagworte erlauben
 * Frontend: Auswahl für Lizenz und Sprache nur bei Bedarf aufklappen
   (insb. wenn noch nicht gewählt), sonst zugeklappt kompakt nebeneinander.
-
+* Cron Job: Benutzer-Config aus externer Datenbank laden.
 * [Annotorious](https://annotorious.github.io/) erkunden
 
 </details>
