@@ -113,32 +113,65 @@ Planteile vergangener Jahre:
 
 * ✅ DOI-Bot: RSS-Suche über Docker-internes Netzwerk
 * ✅ DOI für Latest Version Redirect registrieren/updaten
-* DOI-Bot: Erfolgs- und Fehlerberichte als RSS ausgeben.
 
 
 ### bis 25.03.
 
-* Frontend: Berechtigungsvorschau
-* Doku: Übersicht der Konfigurationsmöglichkeiten
+* ✅ DOI-Bot: Erfolgs- und Fehlerberichte als RSS ausgeben.
+* ✅ Frontend: Berechtigungsvorschau
 
 
+### bis 01.04.
 
-### nahe Zukunft
+(–)
+
+
+### bis 08.04.
+
+* ✅ Anno-Suche: Stoppuhr zur Untersuchung langsamer Antworten
+* ✅ Server loggt jetzt mit Zeitstempeln.
+* ✅ Frontend Doku: Wann und warum muss man Target nachjustieren?
+* ✅ Doku: Übersicht der Konfigurationsmöglichkeiten
+* ✅ Doku: Übersicht aller unterstützter ACL-Privilegien
+* ✅ anno-mongo2postgres: Verwende Autor-Identitäten aus alter users.yml
+* ✅ anno-mongo2postgres: Antwort-Verschachtelung wiederherstellen
+* ✅ Konfig-Migrator für alte users.yml
+
+
+### bis 15.04.
+
+* ✅ Anno- und Konfig-Migrator auf Testserver installiert.
+* ✅ Anno-Migrator verwirft jetzt ungültige URNs.
+* ✅ Server: Diverse Bugs in Version History gefixt.
+* ✅ Shibbolet/Proxy-Beispiel Hinweis: benötigt Apache Modul allowmethods
+* ✅ DevDock Config: Syntaxfehler behoben, /app-Fehler erklärt.
+
+
+### bis 22.04.
 
 * Prüfen: Freischaltung von Multi-Target-Annotationen nur möglich,
   wenn für alle Targets berechtigt.
 * Zusammenspiel von Frontend und DOI Bot testen/debuggen.
+* Frontend: Versionshistorie: Zeige Bearbeiten-Schltfläche nur für neueste.
+* Frontend: Debug: Revision für Zalgo einreichen können auch solange noch
+  nicht freigeschaltet.
 
+
+
+
+
+
+
+
+
+
+### nahe Zukunft
 
 
 
 ### später (unpriorisiert)
 
 <details>
-
-* Frontend: Versionshistorie: Schloss in Auswahlliste wenn widerrufen.
-* Frontend: Versionshistorie: Zeige Bearbeiten-Schltfläche nur für neueste.
-* Frontend: Debug: Zalgo bearbeiten können solange noch nicht freigeschaltet.
 
 * Postgres-Adaper: Umhülle mehrteilige Datenbank-Interkationen mit
   [Transaktionen](https://node-postgres.com/features/transactions).
