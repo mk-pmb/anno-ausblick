@@ -169,46 +169,6 @@ Planteile vergangener Jahre:
 
 
 
-### später (unpriorisiert)
-
-<details>
-
-* Postgres-Adaper: Umhülle mehrteilige Datenbank-Interkationen mit
-  [Transaktionen](https://node-postgres.com/features/transactions).
-* Server: Versionshistorie soll `iana:working-copy` angeben.
-  (Größere Tüftelei: Wie ins MultiSearch SQL einschieben damit geschickt?)
-  * Auch Suchergebnisse für Autoren sollen `iana:working-copy` angeben.
-* Frontend: Wenn Fehlermeldung einen `working-copy` Header hat und der vom
-  eingereichten `dc:replaces` abweicht, biete an, mit geändertem `dc:replaces`
-  zu wiederholen.
-
-
-* Server: Prüfe, welche Anforderungen bei der Einreichung wir mittels der
-  "MAY add information"-Regel oder PATCH-Ausrede lockern können, und ob
-  diverse Annahme eines Datenänderungsverbots wirklich gelten.
-* ACL: Können wir mehrere Targets und Privilegien im selben Durchgang prüfen?
-* ACL: Können wir machen, dass für Versionshistorie in Freischalt-Ansicht
-  Freischaltberechtigung auf ein einziges Target ausreicht?
-* Muss die Einreichung Turtle-Format akzeptieren wg. LDP 5.2.3.5?
-* Erforsche [Web Access Control](https://solidproject.org/TR/wac):
-  ACL Standard-konformer?
-* Frontend: Abruf der Versionshistorie: Antwortformat strenger prüfen,
-  z.B. warnen wenn nicht AnnotationCollection oder mehrere Seiten.
-* Sicherstellen, dass alle administrativen Einreichungswege (z.B. anno2pg)
-  Stempel-relevante Felder wie `dc:dateAccepted` und `iana:sunset` als
-  Stempel speichern statt nur in `anno_data.details`.
-* Semantic Links: Prädikate vereinfachen: Anno-Model enthält `dc:` als
-  Namensraum, wir brauchen da also keine vollen URLs.
-* Frontend: Freitext-Schlagworte erlauben
-* Frontend: Auswahl für Lizenz und Sprache nur bei Bedarf aufklappen
-  (insb. wenn noch nicht gewählt), sonst zugeklappt kompakt nebeneinander.
-
-* [Annotorious](https://annotorious.github.io/) erkunden
-
-</details>
-
-
-
 ### später (absteigende Priorität)
 
 <details>
@@ -251,6 +211,46 @@ Planteile vergangener Jahre:
 * Server: Abruf der "aktuelle Version"-URL mit Header `Accept-Datetime`
   soll den Suchzeitraum einschränken.
 * Server: Header `Accept-Datetime` für Suche nach Subject Target URL
+
+</details>
+
+
+
+### später (unpriorisiert)
+
+<details>
+
+* Postgres-Adaper: Umhülle mehrteilige Datenbank-Interkationen mit
+  [Transaktionen](https://node-postgres.com/features/transactions).
+* Server: Versionshistorie soll `iana:working-copy` angeben.
+  (Größere Tüftelei: Wie ins MultiSearch SQL einschieben damit geschickt?)
+  * Auch Suchergebnisse für Autoren sollen `iana:working-copy` angeben.
+* Frontend: Wenn Fehlermeldung einen `working-copy` Header hat und der vom
+  eingereichten `dc:replaces` abweicht, biete an, mit geändertem `dc:replaces`
+  zu wiederholen.
+
+
+* Server: Prüfe, welche Anforderungen bei der Einreichung wir mittels der
+  "MAY add information"-Regel oder PATCH-Ausrede lockern können, und ob
+  diverse Annahme eines Datenänderungsverbots wirklich gelten.
+* ACL: Können wir mehrere Targets und Privilegien im selben Durchgang prüfen?
+* ACL: Können wir machen, dass für Versionshistorie in Freischalt-Ansicht
+  Freischaltberechtigung auf ein einziges Target ausreicht?
+* Muss die Einreichung Turtle-Format akzeptieren wg. LDP 5.2.3.5?
+* Erforsche [Web Access Control](https://solidproject.org/TR/wac):
+  ACL Standard-konformer?
+* Frontend: Abruf der Versionshistorie: Antwortformat strenger prüfen,
+  z.B. warnen wenn nicht AnnotationCollection oder mehrere Seiten.
+* Sicherstellen, dass alle administrativen Einreichungswege (z.B. anno2pg)
+  Stempel-relevante Felder wie `dc:dateAccepted` und `iana:sunset` als
+  Stempel speichern statt nur in `anno_data.details`.
+* Semantic Links: Prädikate vereinfachen: Anno-Model enthält `dc:` als
+  Namensraum, wir brauchen da also keine vollen URLs.
+* Frontend: Freitext-Schlagworte erlauben
+* Frontend: Auswahl für Lizenz und Sprache nur bei Bedarf aufklappen
+  (insb. wenn noch nicht gewählt), sonst zugeklappt kompakt nebeneinander.
+
+* [Annotorious](https://annotorious.github.io/) erkunden
 
 </details>
 
