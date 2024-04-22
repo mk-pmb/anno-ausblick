@@ -149,12 +149,20 @@ Planteile vergangener Jahre:
 
 ### bis 22.04.
 
-* Prüfen: Freischaltung von Multi-Target-Annotationen nur möglich,
+* ✅ Prüfen: Freischaltung von Multi-Target-Annotationen nur möglich,
   wenn für alle Targets berechtigt.
-* Zusammenspiel von Frontend und DOI Bot testen/debuggen.
-* Frontend: Versionshistorie: Zeige Bearbeiten-Schltfläche nur für neueste.
+* ✅ Zusammenspiel von Frontend und DOI Bot testen/debuggen.
+* ✅ Bugfix: Server: Revision auch über Autor-Endpunkt zulassen.
+* ✅ Frontend: Versionshistorie: Zeige Bearbeiten-Schaltfläche nur für neueste.
+* ✅ Cron Job: Digi-Metadaten updaten
+
+
+### bis 29.04.
+
 * Frontend: Debug: Revision für Zalgo einreichen können auch solange noch
   nicht freigeschaltet.
+* Frontend: Unter-Annotationen hierarchisch darstellen mit Baumstruktur
+  oben und Detail-Ansicht ausgewählter Einzelannotation darunter.
 
 
 
@@ -166,12 +174,6 @@ Planteile vergangener Jahre:
 
 
 ### nahe Zukunft
-
-* Frontend: Unter-Annotationen hierarchisch darstellen mit Baumstruktur
-  oben und Detail-Ansicht ausgewählter Einzelannotation darunter.
-* Cron Job: Digi-Metadaten updaten
-
------
 
 * Frontend: neben GND-Schlagworten auch freie Schlagworte.
 * Frontend: Verschlagwortung mit standardisierten Nicht-GND-Vorkabularen
