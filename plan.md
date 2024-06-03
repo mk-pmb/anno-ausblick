@@ -181,6 +181,7 @@ Planteile vergangener Jahre:
     * Abruf via Nils' Normdatenserver? Lässt sich der GND-Code wiederverwenden?
   * ggf. auch Zeitpunkte/-spannen
   * ggf. auch Geo-Koordinaten
+* Server: Legacy Endpoint, der `dc:title` im `body` mit ausgibt.
 * Annotationen mit IIIF v3 kompatibel machen,
   Mirador 3 Zonendarstellung erforschen.
   * IIIF hat auch "Annotation" aber die projizieren Bilder auf Canvases.
