@@ -188,6 +188,10 @@ Planteile vergangener Jahre:
 * Anno-Frontend modularisieren. Siehe Mail "Re: l10nOverrides" 2024-07-31 06:38
 * Bei Bildern immer auch Scope angeben.
   https://www.w3.org/TR/annotation-model/#scope-of-a-resource
+* Wenn ein Docker-berechtigter Benutzer Docker Templates aus einem für annsrv
+  schreibbaren Verzeichnis verwendet, kann das für Privilege Escalation genutzt
+  werden. &rArr; Tutorial für wie man ein statisches Compose File auf einem
+  Staging-System generiert und aufs Produktivsystem kopiert.
 
 
 
