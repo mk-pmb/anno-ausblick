@@ -157,12 +157,6 @@ Planteile vergangener Jahre:
 * ✅ Cron Job: Digi-Metadaten updaten
 
 
-### bis 29.04.
-
-* Frontend: Debug: Revision für Zalgo einreichen können auch solange noch
-  nicht freigeschaltet.
-* Frontend: Unter-Annotationen hierarchisch darstellen mit Baumstruktur
-  oben und Detail-Ansicht ausgewählter Einzelannotation darunter.
 
 
 
@@ -175,6 +169,11 @@ Planteile vergangener Jahre:
 
 ### nahe Zukunft
 
+* Dokumentiere, wie man Docker Images updated. (Mails vom 2024-08-20 früh.)
+* Upgrade postgres auf 16+.
+* Revisionen einreichen auch solange Vorversion noch nicht freigeschaltet.
+* Frontend: Unter-Annotationen hierarchisch darstellen mit Baumstruktur
+  oben und Detail-Ansicht ausgewählter Einzelannotation darunter.
 * Frontend: neben GND-Schlagworten auch freie Schlagworte.
 * Frontend: Verschlagwortung mit standardisierten Nicht-GND-Vorkabularen
   * Projekt-spezifische Vorkabulare
@@ -186,7 +185,9 @@ Planteile vergangener Jahre:
   Mirador 3 Zonendarstellung erforschen.
   * IIIF hat auch "Annotation" aber die projizieren Bilder auf Canvases.
   * IIIF v2 ignorieren.
-
+* Anno-Frontend modularisieren. Siehe Mail "Re: l10nOverrides" 2024-07-31 06:38
+* Bei Bildern immer auch Scope angeben.
+  https://www.w3.org/TR/annotation-model/#scope-of-a-resource
 
 
 
