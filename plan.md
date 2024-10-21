@@ -157,7 +157,158 @@ Planteile vergangener Jahre:
 * ✅ Cron Job: Digi-Metadaten updaten
 
 
+### bis 29.04.
 
+* ✅ Server Config: Vererbung auch für Services eingebaut
+* ✅ Testprojekt für Mirador 3 aufgesetzt
+* ✅ Vorarbeiten für Anno-Ausgabe im IIIFv3-Format
+
+
+### bis 06.05.
+
+* ✅ Mongo-Konverter auf manuellen Download der DOI-Liste umgebaut
+* ✅ Skript zur Korrektur der Redirect URLs bestehender DOIs
+
+
+<!-- 13. bis 27.5. ohne wesentliche Neuerungen: Urlaub, Feiertage,
+  dann versuchter Umstieg auf neue Anno-Server-Version. -->
+
+
+### bis 03.06.
+
+* ✅ GitHub-Repos auf UBHD-Account umgebaut
+* ✅ Progressive Migration für Mongo-Konverter
+* ✅ DOI-Bot-Option `anno_doi_versep_exceptions` für `_` vs. `~`
+
+
+### bis 10.06.
+
+* ✅ Mongo-Konverter weiter verbessert
+* ✅ DOI-Bot: Bessere Fehlermeldung, wenn eine Anno "HTTP/410 Gone" ist.
+
+
+### bis 17.06.
+
+* ✅ mongo2pg: Linking bodies ohne source werden jetzt zu TextualBodies
+* ✅ DOI-Bot Version Separator Exceptions repariert
+* ✅ DOI-Bot ignoriert zurückgezogene Annos jetzt resilienter
+
+
+### bis 24.06.
+
+* ✅ Frontend: Buttons reparieren
+* ✅ Frontend: Viewer: Standardkonforme Links und Schlagworte anzeigen können
+* ✅ Revisionen einreichen auch solange Vorversion noch nicht freigeschaltet
+
+
+### bis 01.07.
+
+* ✅ Bugfix für Suche im Gastmodus
+* ✅ Frontend: Editor: Erzeuge Links und Schlagworte standardkonform.
+* ✅ HeiImageDraw ausprobiert
+
+
+### bis 08.07.
+
+* ✅ Benutzerdefinierter IP Range für Docker Bridge
+* ✅ Revisionen erben Creator-Feld aus Initialversion
+
+
+### bis 15.07.
+
+* ✅ Anno-Snippet refactored
+
+
+### bis 22.07.
+
+* ✅ mongo2pg: Mehr kaputte Bodies repariert
+* ✅ mongo2pg + Server: Unicode combining characters normalisieren
+
+
+### bis 29.07.
+
+* ✅ mongo2pg: HTML Bodies weiter aufräumen.
+* ✅ Frontend: HTML-Editor: unnütze Formatierungen abschalten.
+* ✅ Server: Provisorische HTML-Entschärfung für eingereichte Annotationen.
+
+
+### bis 06.08.
+
+* ✅ Server: ACL-Preview auch wenn Suchergebnis leer
+* ✅ Server: Login Session Redirect
+* ✅ Frontend: Warte-Modus für externen Target-Editor außerhalb
+* ✅ Frontend: Editor-Tab für externen Target-Editor
+
+
+<!-- … Urlaub … -->
+
+### bis 23.09.
+
+* ✅ DOI-Bot Cron Task repariert
+
+
+### bis 30.09.
+
+* ✅ DOI-Bot kann DOIs für Anno-Versionen vervollständigen
+* ✅ Frontend: Konflikt zwischen HTML-Editor und -Sanitizer debuggen:
+  Problem reproduziert.
+  <!-- Mongo-Dump 2024-05-28, Anno BoapBOs3S-urC58dHJ6Ivg -->
+
+
+### bis 07.10.
+
+* ✅ Server: Bugfix: Gäste sehen anonyme nicht-freigeschaltete Annos nicht mehr.
+* ✅ Server: HTTP-konforme Fehlermeldung wenn eingereichte Anno zu groß.
+* ✅ Server: Upload Size Limit konfigurierbar machen.
+
+
+### bis 14.10.
+
+* ✅ Frontend: HTML-Editor-Modul komplett refactoren, damit es sich dem
+  Anno-Editor passiv unterordent. (Statt mit eigenen Event Hooks aktiv
+  den HTML Sanitizer zu sabotieren.)
+
+
+### bis 21.10.
+
+* ✅ Frontend: Position der HTML-Editor Popups reparieren
+* ✅ Frontend: Neues HTML-Editor-Modul anbinden.
+* ✅ Frontend: Sanitizer wird nicht mehr bei jeder Änderung im HTML-Editor
+  sofort aufgerufen, sondern erst, wenn eine Benutzeraktion (z.B. Vorschau,
+  Entwurf speichern, Einreichen) es erfordert.
+* ✅ Frontend: Debug-Panel kann anzeigen, was der HTML Sanitizer geändert hat.
+
+
+### bis 28.10.
+
+* Server: Legacy Endpoint, der `dc:title` im `body` mit ausgibt.
+* Annotationen mit IIIF v3 kompatibel machen,
+  Mirador 3 Zonendarstellung erforschen.
+  * IIIF hat auch "Annotation" aber die projizieren Bilder auf Canvases.
+  * IIIF v2 ignorieren.
+
+
+### bis 04.11.
+
+* Doku: Docker Images updaten (Mails vom 2024-08-20 früh.)
+* Doku: Privilege Escalation durch Docker Templates vermeiden
+  <!-- (
+  Wenn ein Docker-berechtigter Benutzer Docker Templates aus einem für annsrv
+  schreibbaren Verzeichnis verwendet, kann das für Privilege Escalation genutzt
+  werden. &rArr; Tutorial für wie man ein statisches Compose File auf einem
+  Staging-System generiert und aufs Produktivsystem kopiert.
+  ) -->
+* Frontend: DOI-Vorschau soll Kleinbuchstaben zeigen
+* Frontend: Freitext-Schlagworte ermöglichen
+
+
+### bis 11.11.
+
+* Upgrade postgres auf v16.
+* Inline Blobs (Bild/Video) im Body verbieten
+* Leere `alt=`-Attribute aus `img`-Tags entfernen
+* DOI-Bot: "latest"-Log möglichst erst nach Rerun-Wartezeit drehen.
+* Suchergebnisse nach Datum sortieren! besonders bei RSS.
 
 
 
@@ -169,29 +320,21 @@ Planteile vergangener Jahre:
 
 ### nahe Zukunft
 
-* Dokumentiere, wie man Docker Images updated. (Mails vom 2024-08-20 früh.)
-* Upgrade postgres auf 16+.
-* Revisionen einreichen auch solange Vorversion noch nicht freigeschaltet.
+* Server: Plugin-System einbauen
+* DOI-Bot: Vorversionen in Metadaten verlinken
+  (gitlab:Webservices/heiper/-/issues/4)
 * Frontend: Unter-Annotationen hierarchisch darstellen mit Baumstruktur
   oben und Detail-Ansicht ausgewählter Einzelannotation darunter.
-* Frontend: neben GND-Schlagworten auch freie Schlagworte.
 * Frontend: Verschlagwortung mit standardisierten Nicht-GND-Vorkabularen
   * Projekt-spezifische Vorkabulare
-    * Abruf via Nils' Normdatenserver? Lässt sich der GND-Code wiederverwenden?
+    * Erstmal per Plugin und/oder XRQ laden.
+    * Später abruf via Nils' Normdatenserver? Lässt sich der GND-Code
+      wiederverwenden?
   * ggf. auch Zeitpunkte/-spannen
   * ggf. auch Geo-Koordinaten
-* Server: Legacy Endpoint, der `dc:title` im `body` mit ausgibt.
-* Annotationen mit IIIF v3 kompatibel machen,
-  Mirador 3 Zonendarstellung erforschen.
-  * IIIF hat auch "Annotation" aber die projizieren Bilder auf Canvases.
-  * IIIF v2 ignorieren.
 * Anno-Frontend modularisieren. Siehe Mail "Re: l10nOverrides" 2024-07-31 06:38
 * Bei Bildern immer auch Scope angeben.
   https://www.w3.org/TR/annotation-model/#scope-of-a-resource
-* Wenn ein Docker-berechtigter Benutzer Docker Templates aus einem für annsrv
-  schreibbaren Verzeichnis verwendet, kann das für Privilege Escalation genutzt
-  werden. &rArr; Tutorial für wie man ein statisches Compose File auf einem
-  Staging-System generiert und aufs Produktivsystem kopiert.
 
 
 
@@ -262,11 +405,17 @@ Planteile vergangener Jahre:
   Stempel speichern statt nur in `anno_data.details`.
 * Semantic Links: Prädikate vereinfachen: Anno-Model enthält `dc:` als
   Namensraum, wir brauchen da also keine vollen URLs.
-* Frontend: Freitext-Schlagworte erlauben
 * Frontend: Auswahl für Lizenz und Sprache nur bei Bedarf aufklappen
   (insb. wenn noch nicht gewählt), sonst zugeklappt kompakt nebeneinander.
 * Cron Job: Benutzer-Config aus externer Datenbank laden.
 * [Annotorious](https://annotorious.github.io/) erkunden
+* Musik-Anno-Leute fragen: Noten auch als MIDI? ggf. mit Player im Browser?
+  Upgraden auf interaktiv-kreatives Erlebnis mit MIDI-Editor?
+  * Erstmal mit aktuellen SoundFonts von LAN-Server zeigen dass möglich,
+    dann ggf. weiterforschen wie man kompaktere Soundfonts machen kann,
+    ob z.B. Teile von FluidSynth nach asm.js compilieren. Ggf. Patente klären!
+* Zwecks Übersicht und Marketing: Diagramm, welche Arbeitsgruppen unsere
+  Annos wofür verwenden.
 
 </details>
 
