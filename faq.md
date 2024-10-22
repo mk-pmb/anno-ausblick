@@ -159,6 +159,18 @@ Beispiel-Adresse: `http://anno.test/annos/b98243fb~1`
 
 
 
+### Wie groß dürfen Annotationen sein?
+
+* Der Anno Server hat keine absichtliche Beschränkung, es gibt aber ein paar
+  technische Randbedingungen:
+  * Die Web API hat ein Upload Limit, das mit der Option `upload_size_limit`
+    festgelegt werden kann. Der Standardwert beträgt 1 MB (Stand 2024-10-22).
+  * Spätestens ab 8 KB muss Postgres die [Toast-Technik][pg-toast] anwenden.
+    Die funktioniert transparent und üblicherweise auch sehr performant,
+    dennoch kann das ein Anreiz sein, Annotationen deutlich kleiner zu halten.
+  * Wenn Annotationen mehrere KB groß werden, enthalten sie möglicherweise
+    im Text versteckte Rohdaten.
+    [Davon wird grundsätzlich abgeraten.](inline_blobs_are_bad.de.md)
 
 
 
@@ -171,6 +183,7 @@ Beispiel-Adresse: `http://anno.test/annos/b98243fb~1`
 
 
 
+  [pg-toast]: https://www.postgresql.org/docs/current/storage-toast.html
   [w3-anno-model]: https://www.w3.org/TR/annotation-model/#annotations
   [wp-seo-slug]: https://en.wikipedia.org/wiki/Slug_(web_publishing)
 
