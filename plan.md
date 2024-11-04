@@ -279,7 +279,15 @@ Planteile vergangener Jahre:
 * ✅ Frontend: Debug-Panel kann anzeigen, was der HTML Sanitizer geändert hat.
 
 
-### bis 28.10.
+### bis 04.11.
+
+* ✅ Frontend: Kleinere UI-Optimierungen
+* ✅ Server Bugfix: DOI-Bot-RSS-Fehler
+* ✅ Server Bugfix: URL-Target in Resource umwandeln zwecks Metadaten-Zuweisung
+* ✅ Server: Eindeutige Ref-Nummer für zensierte Fehlermeldungen
+
+
+### bis 11.11.
 
 * Server: Legacy Endpoint, der `dc:title` im `body` mit ausgibt.
 * Annotationen mit IIIF v3 kompatibel machen,
@@ -288,7 +296,7 @@ Planteile vergangener Jahre:
   * IIIF v2 ignorieren.
 
 
-### bis 04.11.
+### bis 18.11.
 
 * Doku: Docker Images updaten (Mails vom 2024-08-20 früh.)
 * Doku: Privilege Escalation durch Docker Templates vermeiden
@@ -302,13 +310,14 @@ Planteile vergangener Jahre:
 * Frontend: Freitext-Schlagworte ermöglichen
 
 
-### bis 11.11.
+### bis 25.11.
 
 * Upgrade postgres auf v16.
 * Inline Blobs (Bild/Video) im Body verbieten
 * Leere `alt=`-Attribute aus `img`-Tags entfernen
 * DOI-Bot: "latest"-Log möglichst erst nach Rerun-Wartezeit drehen.
-* Suchergebnisse nach Datum sortieren! besonders bei RSS.
+* Suchergebnisse nach Datum (wenn vorhanden, des VÖ-Stempels) sortieren!
+  besonders bei RSS.
 
 
 
