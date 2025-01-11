@@ -106,3 +106,9 @@
 
 
 
+<!-- Jahresbericht-Stichpunkte entfellen:
+  Plan reichte aus (Mail 2023-01-08). -->
+
+
+
+

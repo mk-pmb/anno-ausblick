@@ -356,6 +356,26 @@
 
 
 
+### Jahresbericht-Eckpunkte
+
+* Verbesserungen bei Entwürfen und Multi-Target-Annotationen
+* Antworten auf Annotationen
+* Annotationen bearbeiten
+* weitere Verbesserung der Standardkonformität
+* Freischaltung und nachträgliche Depublikation
+* Einzelansicht-Modus, u.a. zwecks Druckansicht
+* Installation des Servers vereinfacht und Anleitung dafür erstellt
+* Datenbank-Imoport-Tool (anno.json &rarr; Postgres)
+* Vorbereitungen für DOI-Vergabe, DOI-Bot angefangen
+* Sprachauswahl für Annotationen
+* Fehlerbehebungen
+
+<!-- Eingereicht 2024-02-01 -->
+
+
+
+
+
 
 
 
