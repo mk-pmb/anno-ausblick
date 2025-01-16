@@ -12,7 +12,6 @@ U+2699 gear (⚙)
 U+1F4A4 sleeping symbol (💤)
 U+1F4A5 collision symbol (💥)
 U+1F534 large red circle (🔴)
-U+1F534 large red circle (🔴)
 U+1F56E book (🕮)
 U+1F578 spider web (🕸)
 U+1F5D1 wastebasket (🗑)
@@ -34,6 +33,10 @@ Planteile vergangener Jahre:
 <!-- Mo 06.01. entfiel weil Feiertag -->
 
 ### bis 13.01.
+
+* ✅ Anno-Digi-Anleitung probelesen
+* ✅ Vorjahr zusammenfassen für Jahresbericht
+
 
 
 

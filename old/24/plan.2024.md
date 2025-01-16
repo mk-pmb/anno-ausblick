@@ -300,6 +300,54 @@
 
 ### Jahresbericht-Eckpunkte
 
+* DOI-Bot gebaut
+* Bugfixes
+* Dokumentation verbessert
+* Komplexere ACL-Features zur Bewältigung komplexer, heterogener
+  Berechtigungen, vor allem:
+  * Kontextbasiert Zusatzdaten aus Katalogdateien abfragen (z.B.
+    Digi-Metadaten)
+  * Variierte Mehrfach-Abarbeitung von ACL-Schablonen
+  * Dynamische Verzweigung zu Unter-ACLs anhand von in den Namen
+    eingefügten Kontextdaten, auch opportunistisch. Das reduziert den
+    Verwaltunsgaufwand, indem die möglichen Verzweigungen nicht einzeln
+    aufgelistet werden müssen, und verbessert die Performance, indem mit
+    nur einer Prüfung sofort alle unzutreffenden Verzweigungsvarianten
+    ignoriert werden können.
+  * Gleichförmige Dienste einheitlich verwalten durch Schablonen
+* Frontend: Berechtigungsvorschau
+* Frontend: Zoneneditor auskoppeln
+* Alte Benutzerliste migriert
+* DOI-Ziel-URLs verkürzt (nur noch doppeltes "anno")
+* Verbesserung der Konsistenz und Standardkonformität von Alt-Annos
+* Standardkonformität bei Neuerstellung per Frontend verbessert
+* Server: Login Session Redirect (war glaub ich für Single-Sign-On)
+* HTML-Editor-Einbindung komplett erneuert: war Altlast und führte zu
+  übers ganze Frontend verteilten Bugs.
+* HTML-Entschärfung für verbesserte Sicherheit
+* Anno Dumper für externe Indizierung
+* Targets können jetzt benannt und (aus der Anno) entfernt werden.
+  (Als Kurzformulierung wird die Doku "Target lösen"/"Unlink target"
+  verwenden, weil "löschen" eine längliche Konkretisierung nach Art von
+  "Target-Eintrag der Annotation" bräuchte. Das Target selbst bleibt ja
+  davon unberührt.)
+* Software-Updates: Postgres v16, Node.js v20 (v22 nicht kompatibel)
+* Erste Versuche mit IIIF v3
+
+<!-- Eingereicht 2025-01-12 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
