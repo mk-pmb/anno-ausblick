@@ -38,6 +38,52 @@ Planteile vergangener Jahre:
 * ✅ Vorjahr zusammenfassen für Jahresbericht
 
 
+### bis 20.01.
+
+* ✅ IIIF v3 in Mirador funktioniert für Einzelrechtecke.
+* 🛤 heiImageViewer vorantreiben
+
+
+### bis 27.01.
+
+* ✅ IIIF v3 in Mirador funktioniert für Polygone.
+* ✅ IIIF v3 in Mirador hat jetzt klickbaren Link zur Annotation.
+* 🛤 heiImageViewer vorantreiben: bessere Internationalisierung.
+
+
+### bis 03.02.
+
+* ✅ Besprechung TIB-Vokabulardienst
+* ✅ IIIF v3 in Mirador funktioniert für all unsere Formen.
+* 🛤 heiImageViewer vorantreiben
+* ⏳ Postgres Anno-ID-Spalten auf custom data type umbauen (begonnen)
+* ✅ anno-doc: wkhtml probiert: wird nicht mehr gewartet.
+
+
+### bis 10.02.
+
+* ✅ IIIF v3 in Mirador kann SVG-Selektoren jetzt skalieren.
+* 🛤 heiImageViewer vorantreiben
+
+
+### bis 17.02.
+
+* ✅ Digi-Demo eingerichtet, DWork aufgeräumt.
+* ✅ Besprechung TIB-Vokabulardienst
+
+
+### bis 24.02.
+
+* ✅ Anno-Server: Fälschliche Ergebnisanzahlbegrenzung der Suche entfernt.
+* ☔ TIB Vokabular-API ausprobiert, vorerst erfolglos.
+
+
+<!-- 3.3. entfällt -->
+
+### bis 08.03.
+
+* Postgres Anno-ID-Spalten auf custom data type umbauen + Migrator dafür
+* 🛤 heiImageViewer vorantreiben
 
 
 
@@ -45,13 +91,19 @@ Planteile vergangener Jahre:
 
 ### nahe Zukunft
 
-* Frontend Bugfix: Fälschlicher Hinweis auf angebliche weitere Targets
+* heiImageViewer Bugs siehe GitLab
+* heiImageViewer Release Skript bauen
+  * braucht bessere i18n
+    * Anhand von anno-frontend vorturnen, damit Gustavo es nachbauen kann.
+* Anno-Frontend: Schlagworte-API-Demo
+  * Alternative zum TIB-Vokabulardienst: https://api.dante.gbv.de/start/
+* Anno-Frontend: Schlagworte-Wolke über Anno-Liste.
+  * Nur-Schlagworte-Annos darin verstecken.
+  * Anno-Server soll dann vermutlich Nur-Schlagworte-Annos
+    ohne Text und Titel erlauben.
+* Anno-Frontend: Sortierung leichter testbar machen und testen
 
 * Server: Legacy Endpoint, der `dc:title` im `body` mit ausgibt.
-* Annotationen mit IIIF v3 kompatibel machen,
-  Mirador 3 Zonendarstellung erforschen.
-  * IIIF hat auch "Annotation" aber die projizieren Bilder auf Canvases.
-  * IIIF v2 ignorieren.
 * Doku: Docker Images updaten (Mails vom 2024-08-20 früh.)
 * Doku: Privilege Escalation durch Docker Templates vermeiden
   <!-- (
@@ -65,6 +117,7 @@ Planteile vergangener Jahre:
 
 
 
+* Anno-Frontend in HeidIcon integrieren
 * Inline Blobs (Bild/Video) im Body verbieten
 * Leere `alt=`-Attribute aus `img`-Tags entfernen
 * DOI-Bot: "latest"-Log möglichst erst nach Rerun-Wartezeit drehen.
@@ -87,6 +140,10 @@ Planteile vergangener Jahre:
 * Anno-Frontend modularisieren. Siehe Mail "Re: l10nOverrides" 2024-07-31 06:38
 * Bei Bildern immer auch Scope angeben.
   https://www.w3.org/TR/annotation-model/#scope-of-a-resource
+* Quill (unser HTML-Editor für den TextualBody) benutzt veraltetes Event
+  DOMNodeInserted und wird bald nicht mehr unterstützt, warnt Firefox.
+
+
 
 
 
