@@ -91,6 +91,7 @@ Planteile vergangener Jahre:
 
 ### nahe Zukunft
 
+* Anno Server: Einstellen können, wie viele alte Logs man behalten möchte.
 * heiImageViewer Bugs siehe GitLab
 * heiImageViewer Release Skript bauen
   * braucht bessere i18n
