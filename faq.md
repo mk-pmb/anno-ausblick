@@ -170,7 +170,7 @@ Beispiel-Adresse: `http://anno.test/annos/b98243fb~1`
     dennoch kann das ein Anreiz sein, Annotationen deutlich kleiner zu halten.
   * Wenn Annotationen mehrere KB groß werden, enthalten sie möglicherweise
     im Text versteckte Rohdaten.
-    [Davon wird grundsätzlich abgeraten.](inline_blobs_are_bad.de.md)
+    [Davon raten wir grundsätzlich ab.](inline_blobs_are_bad.de.md)
 
 
 
