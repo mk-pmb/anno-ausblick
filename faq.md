@@ -3,12 +3,56 @@ Häufige Fragen und deren Antworten
 ==================================
 
 
-### Kann ich den Anno Server schon ausprobieren?
+### Aus welchen Komponenten besteht HeiANNO und wie modular sind die?
 
-Ja, der [staging branch](https://github.com/mk-pmb/anno-server-22/tree/staging)
-beinhaltet schon die meisten wichtigen Features.
-Eine Installationsanleitung ist in der Readme verlinkt.
+* __heiANNO__ ist das Annotationen-Projekt der Uni Heidelberg. Das ist der
+  organisatorische Rahmen, in dem wir unsere Anno-Software entwickeln.
 
+* __`anno-server-22`__ stellt die veröffentlichten Annotationen
+  maschinenlesbar bereit, basierend auf einer Postgres-Datenbank.
+  Er sollte mit jeder Anwendung funktionieren, die
+  [Web Annotation Protocol][w3-anno-protocol] verwendet;
+  Details und Einschränkungen siehe Server-Dokumentation.
+
+* __Anno-Backend__ war der Vorgänger von `anno-server-22`. Die Software ist
+  veraltet und die API wich in wichtgen Punkten von den W3-Anno-Standards ab.
+
+* __DWork__ ist die Web-Anwendung, die auf z.B. beim
+  [Klosterarchiv Lorsch][saw_mainz72_p5] das Gesamterlebnis aus Navigation,
+  Metadaten, mehreren Ansichtsmodi und auch Annotationen bereitstellt.
+
+* __Anno-Snippets in DWork__ sind der Kleber, mit dem Anno-Frontend in DWork
+  eingebunden wird. Hier wird im wesentlichen konfiguriert, wo auf der Seite
+  Anno-Frontend angezeigt werden soll und wie es mit anderen Modulen der Seite
+  interagieren soll.
+
+* __Anno-Frontend__ übernimmt die Darstellung der Annotationen-Spalte,
+  Darstellung des inhaltlichen Teils der Einzelseiten-Ansicht,
+  und es stellt auch den Annotationen-Editor bereit.
+
+* __heiImageViewer__ ist das Modul, das in DWork die Buchseiten darstellt,
+  und stellt auch den Zonen-Editor bereit. Dass wir im Anno-Editor-Dialog
+  nochmal einen neuen Zonen-Editor laden, obwohl DWork die Buchseite bereits
+  auf tendenziell viel größerem Raum darstellt, ist eine Besonderheit unserer
+  DWork-Arbeitsweise. Der im Frontend als Normalfall vorgesehene Weg ist
+  eigentlich externe Bearbeitung: Dabei verschwindet der Anno-Editor-Dialog
+  und die Annotationen-Spalte geht in den Wartemodus, zeigt sinngemäß
+  "Warte auf Ergebnis der externen Bearbeitung… [Abbrechen]".
+  Wenn die umgebende Webseite dann das Ergebnis liefert, erscheint wieder der
+  Anno-Editor-Dialog.
+
+
+
+### Kann ich den Anno-Server und das Anno-Frontend schon ausprobieren?
+
+Ja, die jeweiligen __staging__-Branches
+([anno-server-22](https://github.com/mk-pmb/anno-server-22/tree/staging) /
+[anno-frontend](https://github.com/mk-pmb/anno-frontend/tree/staging))
+sind weitgehend stabil und werden nur selten zurückgespult.
+
+Eine Installationsanleitung (Server) bzw.
+Hinweise für Entwickler zum lokalen Testbetrieb (Frontend)
+sind in der jeweiligen Readme verlinkt.
 
 
 
@@ -184,7 +228,9 @@ Beispiel-Adresse: `http://anno.test/annos/b98243fb~1`
 
 
   [pg-toast]: https://www.postgresql.org/docs/current/storage-toast.html
+  [saw_mainz72_p5]: https://archivum-laureshamense-digital.de/view/saw_mainz72/0005/
   [w3-anno-model]: https://www.w3.org/TR/annotation-model/#annotations
+  [w3-anno-protocol]: https://www.w3.org/TR/annotation-protocol
   [wp-seo-slug]: https://en.wikipedia.org/wiki/Slug_(web_publishing)
 
 
